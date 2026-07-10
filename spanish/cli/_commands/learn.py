@@ -1,4 +1,4 @@
-"""``spanish-cli learn`` — the learnability affordance.
+"""``spanish learn`` — the learnability affordance.
 
 Prints a structured self-teaching prompt. Must satisfy the agent-first rubric:
 >=200 chars and mention purpose, command map, exit codes, --json, and explain.
@@ -12,7 +12,7 @@ from spanish import __version__
 from spanish.cli._output import emit_result
 
 _TEXT = """\
-spanish-cli — a clonable template for AgentCulture mesh agents.
+spanish — a clonable template for AgentCulture mesh agents.
 
 Purpose
 -------
@@ -23,12 +23,12 @@ rename the package, and edit culture.yaml to mint a new agent.
 
 Commands
 --------
-  spanish-cli whoami             Identity from culture.yaml.
-  spanish-cli learn              This self-teaching prompt.
-  spanish-cli explain <path>...  Markdown docs for any noun/verb path.
-  spanish-cli overview           Descriptive snapshot of the agent.
-  spanish-cli doctor             Check the agent-identity invariants.
-  spanish-cli cli overview       Describe the CLI surface itself.
+  spanish whoami             Identity from culture.yaml.
+  spanish learn              This self-teaching prompt.
+  spanish explain <path>...  Markdown docs for any noun/verb path.
+  spanish overview           Descriptive snapshot of the agent.
+  spanish doctor             Check the agent-identity invariants.
+  spanish cli overview       Describe the CLI surface itself.
 
 Machine-readable output
 -----------------------
@@ -44,13 +44,13 @@ Exit-code policy
 
 More detail
 -----------
-  spanish-cli explain spanish-cli
+  spanish explain spanish
 """
 
 
 def _as_json_payload() -> dict[str, object]:
     return {
-        "tool": "spanish-cli",
+        "tool": "spanish",
         "version": __version__,
         "purpose": "Clonable scaffold for a new AgentCulture mesh agent.",
         "commands": [
@@ -67,7 +67,7 @@ def _as_json_payload() -> dict[str, object]:
             "2": "environment/setup error",
         },
         "json_support": True,
-        "explain_pointer": "spanish-cli explain <path>",
+        "explain_pointer": "spanish explain <path>",
     }
 
 

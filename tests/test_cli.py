@@ -21,7 +21,7 @@ def test_version_flag(capsys: pytest.CaptureFixture[str]) -> None:
 def test_no_args_prints_help(capsys: pytest.CaptureFixture[str]) -> None:
     rc = main([])
     assert rc == 0
-    assert "usage: spanish-cli" in capsys.readouterr().out
+    assert "usage: spanish" in capsys.readouterr().out
 
 
 def test_unknown_command_errors(capsys: pytest.CaptureFixture[str]) -> None:
@@ -62,7 +62,7 @@ def test_learn_text(capsys: pytest.CaptureFixture[str]) -> None:
     assert rc == 0
     out = capsys.readouterr().out
     assert len(out) >= 200
-    assert "spanish-cli" in out
+    assert "spanish whoami" in out
     assert "Exit-code policy" in out
     assert "--json" in out
     assert "explain" in out
@@ -72,7 +72,7 @@ def test_learn_json(capsys: pytest.CaptureFixture[str]) -> None:
     rc = main(["learn", "--json"])
     assert rc == 0
     payload = json.loads(capsys.readouterr().out)
-    assert payload["tool"] == "spanish-cli"
+    assert payload["tool"] == "spanish"
     assert payload["version"] == __version__
     assert payload["json_support"] is True
 
@@ -83,13 +83,21 @@ def test_learn_json(capsys: pytest.CaptureFixture[str]) -> None:
 def test_explain_root(capsys: pytest.CaptureFixture[str]) -> None:
     rc = main(["explain"])
     assert rc == 0
-    assert "# spanish-cli" in capsys.readouterr().out
+    assert "# spanish" in capsys.readouterr().out
 
 
 def test_explain_self(capsys: pytest.CaptureFixture[str]) -> None:
-    rc = main(["explain", "spanish-cli"])
+    """The rubric's explain_self check probes the console-script name."""
+    rc = main(["explain", "spanish"])
     assert rc == 0
     assert capsys.readouterr().out.startswith("#")
+
+
+def test_explain_dist_name_alias(capsys: pytest.CaptureFixture[str]) -> None:
+    """`explain spanish-cli` (the distribution name) still resolves to the root."""
+    rc = main(["explain", "spanish-cli"])
+    assert rc == 0
+    assert "# spanish" in capsys.readouterr().out
 
 
 def test_explain_json(capsys: pytest.CaptureFixture[str]) -> None:
@@ -97,7 +105,7 @@ def test_explain_json(capsys: pytest.CaptureFixture[str]) -> None:
     assert rc == 0
     payload = json.loads(capsys.readouterr().out)
     assert payload["path"] == ["whoami"]
-    assert "spanish-cli whoami" in payload["markdown"]
+    assert "spanish whoami" in payload["markdown"]
 
 
 def test_explain_unknown_path_errors(capsys: pytest.CaptureFixture[str]) -> None:
