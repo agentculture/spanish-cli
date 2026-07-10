@@ -15,7 +15,7 @@ Consequence: the CLI still describes itself as "a clonable template for AgentCul
 ```bash
 uv sync                                   # create .venv, install dev group
 
-uv run pytest -n auto                     # full suite (22 tests, ~1s)
+uv run pytest -n auto                     # full suite (~1s)
 uv run pytest tests/test_cli.py::test_whoami_json -v     # a single test
 bash .claude/skills/run-tests/scripts/test.sh --ci       # exactly what CI runs
 
@@ -76,7 +76,7 @@ Each module in `spanish/cli/_commands/` exposes `register(sub)`. To add one:
 
 **PRs go through the `cicd` skill** (`.claude/skills/cicd/scripts/workflow.sh`), which wraps `devex pr` — `lint | open | read | reply | delta`, plus its own `status` and `await` (SonarCloud quality gate + unresolved-thread tally, non-zero exit on a red gate). Requires `devex` >= 0.21, `gh`, and `jq` on PATH.
 
-**`.claude/skills/` is vendored cite-don't-import from [guildmaster](https://github.com/agentculture/guildmaster)** (11 skills; `ask-colleague` comes directly from `colleague`). Don't edit or reformat those scripts as part of unrelated work — markdownlint ignores the tree, Sonar excludes it, and `docs/skill-sources.md` is the provenance ledger with the re-sync procedure and its two tracked divergences (`agex` → `devex`, `outsource` → `ask-colleague`). If a change belongs upstream, lift it to guildmaster and re-vendor.
+**`.claude/skills/` is vendored cite-don't-import from [guildmaster](https://github.com/agentculture/guildmaster)** (`ask-colleague` comes directly from `colleague`; `remember` and `recall` from `eidetic-cli`). Don't edit or reformat those scripts as part of unrelated work — markdownlint ignores the tree, Sonar excludes it, and `docs/skill-sources.md` is the provenance ledger with the re-sync procedure and its two tracked divergences (`agex` → `devex`, `outsource` → `ask-colleague`). If a change belongs upstream, lift it to guildmaster and re-vendor.
 
 **Publishing** is PyPI Trusted Publishing via OIDC. `publish.yml` fires on changes to `pyproject.toml` or `spanish/**`: same-repo PRs publish a `.dev<run_number>` build to TestPyPI, pushes to `main` publish to PyPI. Fork PRs skip it.
 
