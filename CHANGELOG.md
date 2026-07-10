@@ -5,6 +5,24 @@ All notable changes to this project will be documented in this file.
 Format follows [Keep a Changelog](https://keepachangelog.com/). This project
 adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.5.0] - 2026-07-10
+
+### Added
+
+- `explain spanish` resolves the console-script name, satisfying the agent-first rubric's `explain_self` check; `explain spanish-cli` is kept as an alias for the distribution name.
+- A full runtime `CLAUDE.md` (replaces the self-initializing seed): the output/error contract, the `register(sub)` extension path, the backend/prompt-file coupling, and the version-bump-every-PR rule.
+
+### Changed
+
+- `spanish` is now the canonical CLI name. argparse `prog`, the `learn` command map and `tool` field, every explain-catalog body, and all `hint:` remediations say `spanish`. `spanish-cli` is retained only as the distribution name, the issues URL, and the mesh nick (`culture.yaml` `suffix`).
+
+### Fixed
+
+- `uv run teken cli doctor . --strict` (the rubric gate CI's lint job runs) failed `explain_self` at 25/26 — the catalog knew `spanish-cli` but the rubric probes the console-script name `spanish`. Now 26/26.
+- README quickstart advertised `uv run spanish-cli whoami`, which exits 2 with `Failed to spawn`; the console script is `spanish`.
+- `uv.lock` pinned the workspace package at 0.3.4 while `pyproject.toml` declared 0.4.0.
+- README `Make it your own` cited a rename procedure in the (now replaced) seed `CLAUDE.md`.
+
 ## [0.4.0] - 2026-06-23
 
 ### Added

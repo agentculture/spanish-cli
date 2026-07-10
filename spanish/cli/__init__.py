@@ -70,8 +70,8 @@ def _build_parser() -> argparse.ArgumentParser:
     from spanish.cli._commands import whoami as _whoami_cmd
 
     parser = _CliArgumentParser(
-        prog="spanish-cli",
-        description="spanish-cli — a clonable template for AgentCulture mesh agents.",
+        prog="spanish",
+        description="spanish — a clonable template for AgentCulture mesh agents.",
     )
     parser.add_argument(
         "--version",

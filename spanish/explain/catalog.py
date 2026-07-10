@@ -1,7 +1,8 @@
-"""Markdown catalog for ``spanish-cli explain <path>``.
+"""Markdown catalog for ``spanish explain <path>``.
 
 Each entry is verbatim markdown. Keys are command-path tuples. The empty tuple
-and ``("spanish-cli",)`` both resolve to the root entry.
+and ``("spanish",)`` both resolve to the root entry; ``("spanish-cli",)`` is
+kept as an alias for the distribution name.
 
 Keep bodies self-contained: an agent reading one entry should get enough
 context without chaining reads.
@@ -10,7 +11,7 @@ context without chaining reads.
 from __future__ import annotations
 
 _ROOT = """\
-# spanish-cli
+# spanish
 
 A clonable template for AgentCulture mesh agents. It carries an agent-first CLI
 (cited from the teken `python-cli` reference), a mesh identity (`culture.yaml` +
@@ -20,12 +21,12 @@ buildable/deployable package baseline. Clone it, rename the package, edit
 
 ## Verbs
 
-- `spanish-cli whoami` — identity probe from `culture.yaml`.
-- `spanish-cli learn` — structured self-teaching prompt.
-- `spanish-cli explain <path>` — markdown docs for any noun/verb.
-- `spanish-cli overview` — descriptive snapshot of the agent.
-- `spanish-cli doctor` — check the agent-identity invariants.
-- `spanish-cli cli overview` — describe the CLI surface.
+- `spanish whoami` — identity probe from `culture.yaml`.
+- `spanish learn` — structured self-teaching prompt.
+- `spanish explain <path>` — markdown docs for any noun/verb.
+- `spanish overview` — descriptive snapshot of the agent.
+- `spanish doctor` — check the agent-identity invariants.
+- `spanish cli overview` — describe the CLI surface.
 
 ## Exit-code policy
 
@@ -36,49 +37,49 @@ buildable/deployable package baseline. Clone it, rename the package, edit
 
 ## See also
 
-- `spanish-cli explain whoami`
-- `spanish-cli explain doctor`
+- `spanish explain whoami`
+- `spanish explain doctor`
 """
 
 _WHOAMI = """\
-# spanish-cli whoami
+# spanish whoami
 
 Reports the agent's identity from `culture.yaml`: nick (`suffix`), backend,
 served model, and the package version. Read-only.
 
 ## Usage
 
-    spanish-cli whoami
-    spanish-cli whoami --json
+    spanish whoami
+    spanish whoami --json
 """
 
 _LEARN = """\
-# spanish-cli learn
+# spanish learn
 
 Prints a structured self-teaching prompt covering purpose, command map,
 exit-code policy, `--json` support, and the `explain` pointer.
 
 ## Usage
 
-    spanish-cli learn
-    spanish-cli learn --json
+    spanish learn
+    spanish learn --json
 """
 
 _EXPLAIN = """\
-# spanish-cli explain <path>
+# spanish explain <path>
 
 Prints markdown documentation for any noun/verb path. Unlike `--help` (terse,
 positional), `explain` is global and addressable by path.
 
 ## Usage
 
-    spanish-cli explain spanish-cli
-    spanish-cli explain whoami
-    spanish-cli explain --json <path>
+    spanish explain spanish
+    spanish explain whoami
+    spanish explain --json <path>
 """
 
 _OVERVIEW = """\
-# spanish-cli overview
+# spanish overview
 
 Read-only descriptive snapshot of the agent: identity (from `culture.yaml`), the
 verb surface, and the sibling-pattern artifacts the template carries. Accepts an
@@ -86,12 +87,12 @@ ignored `target` so a stray path never hard-fails.
 
 ## Usage
 
-    spanish-cli overview
-    spanish-cli overview --json
+    spanish overview
+    spanish overview --json
 """
 
 _DOCTOR = """\
-# spanish-cli doctor
+# spanish doctor
 
 Checks the agent-identity invariants `steward doctor` verifies:
 prompt-file-present and backend-consistency (`colleague` → `AGENTS.colleague.md`), plus a
@@ -99,25 +100,29 @@ skills-present check. Exits 1 when unhealthy.
 
 ## Usage
 
-    spanish-cli doctor
-    spanish-cli doctor --json
+    spanish doctor
+    spanish doctor --json
 """
 
 _CLI = """\
-# spanish-cli cli
+# spanish cli
 
 Noun group for CLI-surface introspection. `cli overview` describes the CLI
 itself (distinct from the global `overview`, which describes the agent).
 
 ## Usage
 
-    spanish-cli cli overview
-    spanish-cli cli overview --json
+    spanish cli overview
+    spanish cli overview --json
 """
 
 
 ENTRIES: dict[tuple[str, ...], str] = {
     (): _ROOT,
+    # The console script name is the canonical self-name: the agent-first
+    # rubric's `explain_self` check probes `explain <console-script-name>`.
+    ("spanish",): _ROOT,
+    # Alias for the distribution/repo name, so `explain spanish-cli` resolves.
     ("spanish-cli",): _ROOT,
     ("whoami",): _WHOAMI,
     ("learn",): _LEARN,

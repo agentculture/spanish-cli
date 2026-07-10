@@ -19,10 +19,13 @@ Agent + CLI that turns Claude into a private Spanish tutor: track progress, get 
 ```bash
 uv sync
 uv run pytest -n auto                 # run the test suite
-uv run spanish-cli whoami  # identity from culture.yaml
-uv run spanish-cli learn   # self-teaching prompt (add --json)
+uv run spanish whoami                 # identity from culture.yaml
+uv run spanish learn                  # self-teaching prompt (add --json)
 uv run teken cli doctor . --strict    # the agent-first rubric gate CI runs
 ```
+
+The command is `spanish`; `spanish-cli` is the distribution name on PyPI and the
+name of this repo.
 
 ## CLI
 
@@ -39,20 +42,16 @@ Every command supports `--json`. Results go to stdout, errors/diagnostics to
 stderr (never mixed). Exit codes: `0` success, `1` user error, `2` environment
 error, `3+` reserved.
 
-## Make it your own
+## Status
 
-1. Rename the package `spanish/` and the `spanish-cli`
-   CLI/dist name throughout `pyproject.toml`, the package, `tests/`,
-   `sonar-project.properties`, and this `README.md`. The name is hard-coded in
-   ~100 places, so list every occurrence first — see the `git grep` discovery
-   command in [`CLAUDE.md`](CLAUDE.md), the authoritative rename procedure.
-2. Edit `culture.yaml` with your `suffix` and `backend`.
-3. Rewrite `CLAUDE.md` for your agent and run `/init`.
-4. Re-vendor only the skills you need from guildmaster (see
-   [`docs/skill-sources.md`](docs/skill-sources.md)).
+Scaffolded from `culture-agent-template`; the Spanish-tutor domain is not built
+yet. What ships today is the template's agent-first CLI skeleton — the six
+introspection verbs above — so the self-describing output (`learn`, `explain`)
+still calls itself a template. That prose gets rewritten alongside the first
+tutor feature.
 
-See [`CLAUDE.md`](CLAUDE.md) for the full conventions (version-bump-every-PR,
-the `cicd` PR lane, deploy setup).
+See [`CLAUDE.md`](CLAUDE.md) for the conventions (version-bump-every-PR, the
+`cicd` PR lane, the agent-first rubric gate, deploy setup).
 
 ## License
 
