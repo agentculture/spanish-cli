@@ -1,0 +1,122 @@
+{
+  "schema_version": "1.0",
+  "kind": "story",
+  "id": "es-c1-el-ultimo-tren-a-buenos-aires",
+  "subject": "spanish",
+  "title": "El último tren a Buenos Aires",
+  "level": "advanced",
+  "level_detail": "C1 — Argentine Spanish (voseo)",
+  "language": "es",
+  "summary": "Julián returns to Buenos Aires after a decade away and meets a stranger on the train.",
+  "body": "Hacía más de diez años que Julián no volvía a Buenos Aires. Cuando el tren\nse detuvo en la estación de Retiro, sintió una mezcla extraña de nostalgia y\ndesconfianza, como si la ciudad ya no le perteneciera del todo.\n\n—¿Vos sos de acá? —le preguntó una mujer que viajaba en el asiento de\nenfrente, notando quizás la expresión perdida en su rostro.\n\n—Nací acá, sí —respondió Julián—, pero me fui hace mucho tiempo. No sé si\ntodavía puedo decir que soy de acá.\n\nLa mujer, que se llamaba Renata, sonrió con complicidad. Le contó que ella\ntambién se había ido de joven, aunque había regresado hacía ya varios años,\ncuando su padre se enfermó y necesitó que alguien cuidara de él.\n\n—A veces pienso que uno nunca deja de ser de un lugar, aunque se vaya —dijo\nRenata, mirando por la ventanilla—. Es como si la ciudad te esperara, sin\nimportar cuánto tiempo hayas estado afuera.\n\nJulián no supo qué responder. Durante el viaje, había evitado pensar\ndemasiado en lo que encontraría al llegar: la casa de su infancia, ahora\nvendida a otra familia; el bar de la esquina, tal vez cerrado; los amigos\nque, con los años, habían dejado de escribirle.\n\nCuando el tren finalmente entró en la estación, Julián bajó despacio, como\nsi temiera que sus piernas no recordaran cómo caminar por esas calles. El\naire olía distinto de lo que recordaba, aunque no sabría explicar\nexactamente en qué.\n\nAntes de despedirse, Renata le dio un consejo que Julián guardaría durante\nmucho tiempo:\n\n—No busques la ciudad que dejaste. Esa ya no existe. Dejate sorprender por\nla que encontrás ahora.\n\nJulián caminó por Avenida Santa Fe sin rumbo fijo, dejando que sus pies\ndecidieran el camino. Reconoció algunos edificios, otros habían cambiado por\ncompleto. En una esquina, encontró una confitería que, para su sorpresa,\nseguía funcionando después de tantos años.\n\nEntró, pidió un café con leche y unas medialunas, y se sentó junto a la\nventana. Mientras observaba pasar a la gente por la calle, entendió que\nquizás Renata tenía razón: no había vuelto a buscar el pasado, sino a\ndescubrir en qué se había convertido su ciudad — y, en el fondo, en qué se\nhabía convertido él mismo.",
+  "glossary": [
+    {
+      "term": "la desconfianza",
+      "definition": "distrust, wariness"
+    },
+    {
+      "term": "pertenecer",
+      "definition": "to belong"
+    },
+    {
+      "term": "la complicidad",
+      "definition": "a sense of shared understanding, camaraderie"
+    },
+    {
+      "term": "la ventanilla",
+      "definition": "the train/car window"
+    },
+    {
+      "term": "sin rumbo fijo",
+      "definition": "without a fixed direction, aimlessly"
+    },
+    {
+      "term": "la confitería",
+      "definition": "a traditional café-bakery",
+      "note": "Especially associated with Buenos Aires' historic cafés."
+    },
+    {
+      "term": "la medialuna",
+      "definition": "the croissant",
+      "note": "Argentine term; not used this way elsewhere."
+    },
+    {
+      "term": "vos sos / vos tenés",
+      "definition": "you are / you have (voseo)",
+      "note": "Rioplatense voseo replaces tú with vos and shifts present-tense stress: sos instead of eres, tenés instead of tienes."
+    },
+    {
+      "term": "dejate / encontrás",
+      "definition": "let yourself / you find (voseo imperative & present)",
+      "note": "Voseo imperative dejate (from dejarse) and voseo present encontrás (from encontrar)."
+    },
+    {
+      "term": "el rostro",
+      "definition": "the face"
+    },
+    {
+      "term": "guardar un consejo",
+      "definition": "to hold onto, to keep (advice)"
+    },
+    {
+      "term": "de vuelta",
+      "definition": "back, in return"
+    },
+    {
+      "term": "el fondo",
+      "definition": "the bottom, the core (\"en el fondo\" = deep down)"
+    }
+  ],
+  "exercises": [
+    {
+      "id": "es-c1-el-ultimo-tren-a-buenos-aires-q1",
+      "type": "multiple_choice",
+      "item_id": "es.story.es-c1-el-ultimo-tren-a-buenos-aires.1",
+      "prompt": "¿Cuánto tiempo hacía que Julián no volvía a Buenos Aires?",
+      "choices": [
+        "Más de diez años",
+        "Dos años",
+        "Seis meses"
+      ],
+      "answer": "Más de diez años"
+    },
+    {
+      "id": "es-c1-el-ultimo-tren-a-buenos-aires-q2",
+      "type": "true_false",
+      "item_id": "es.story.es-c1-el-ultimo-tren-a-buenos-aires.2",
+      "prompt": "Renata volvió a Buenos Aires porque su padre se enfermó.",
+      "choices": [
+        "Verdadero",
+        "Falso"
+      ],
+      "answer": "Verdadero"
+    },
+    {
+      "id": "es-c1-el-ultimo-tren-a-buenos-aires-q3",
+      "type": "cloze",
+      "item_id": "es.story.es-c1-el-ultimo-tren-a-buenos-aires.3",
+      "prompt": "—No busques la ciudad que dejaste. Esa ya no existe. Dejate ___ por la que encontrás ahora.",
+      "answer": "sorprender"
+    },
+    {
+      "id": "es-c1-el-ultimo-tren-a-buenos-aires-q4",
+      "type": "short_answer",
+      "item_id": "es.story.es-c1-el-ultimo-tren-a-buenos-aires.4",
+      "prompt": "¿Qué consejo le da Renata a Julián antes de despedirse?",
+      "rubric": "Passes if the answer captures that she tells him not to look for the city he left, but to let himself be surprised by the one he finds now."
+    },
+    {
+      "id": "es-c1-el-ultimo-tren-a-buenos-aires-q5",
+      "type": "discussion",
+      "item_id": "es.story.es-c1-el-ultimo-tren-a-buenos-aires.5",
+      "prompt": "El cuento usa voseo rioplatense (\"vos sos\", \"encontrás\", \"dejate\") en vez de \"tú eres\", \"encuentras\", \"déjate\". Reescribe la frase de Renata \"Dejate sorprender por la que encontrás ahora\" usando la forma de tú.",
+      "rubric": "Passes if the learner correctly converts both verbs: 'Déjate sorprender por la que encuentras ahora.'"
+    }
+  ],
+  "audio": null,
+  "source": {
+    "generator": "hand-authored",
+    "reviewed_by": "agent-t7b",
+    "generated_at": "2026-07-11"
+  }
+}

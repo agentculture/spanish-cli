@@ -1,0 +1,95 @@
+{
+  "schema_version": "1.0",
+  "kind": "story",
+  "id": "es-b1-una-carta-a-mi-abuela",
+  "subject": "spanish",
+  "title": "Una carta a mi abuela",
+  "level": "intermediate",
+  "level_detail": "B1",
+  "language": "es",
+  "summary": "Camila writes to her grandmother about city life, cooking, and missing her.",
+  "body": "Querida abuela:\n\nEspero que estés bien y que el jardín siga lleno de flores como siempre. Te\nescribo porque hace mucho tiempo que no hablamos y te extraño mucho.\n\nLa semana pasada encontré una foto vieja de cuando yo era pequeña y\npasábamos los veranos en tu casa del campo. Me acordé de las tardes en las\nque me enseñabas a hacer pan y de las historias que me contabas antes de\ndormir.\n\nAhora vivo en la ciudad y todo es muy diferente. Trabajo muchas horas y, a\nveces, olvido las cosas simples que tú siempre me enseñaste: caminar\ndespacio, escuchar a los demás y disfrutar de una buena comida sin prisa.\n\nEl mes pasado empecé a cocinar los platos que tú me enseñaste. Al principio\nno me salían igual de bien, pero después de varios intentos, logré hacer tu\nfamoso guiso de lentejas. Cuando lo probé, sentí que estaba de vuelta en tu\ncocina.\n\nMi hermano me contó que fuiste al médico la semana pasada y que todo salió\nbien. Me alegré mucho de escuchar esa noticia. Por favor, cuídate y no\ntrabajes tanto en el jardín bajo el sol fuerte.\n\nEstoy planeando visitarte el próximo mes, cuando tenga unos días libres del\ntrabajo. Quiero sentarme contigo en el porche, tomar café y escuchar tus\nhistorias otra vez.\n\nEspero que estas líneas te alegren el día. Te quiero mucho y pienso en ti\ntodos los días.\n\nCon mucho cariño,\nCamila",
+  "glossary": [
+    {
+      "term": "extrañar",
+      "definition": "to miss (someone)"
+    },
+    {
+      "term": "el campo",
+      "definition": "the countryside"
+    },
+    {
+      "term": "enseñar",
+      "definition": "to teach"
+    },
+    {
+      "term": "sin prisa",
+      "definition": "without rushing"
+    },
+    {
+      "term": "el guiso de lentejas",
+      "definition": "lentil stew"
+    },
+    {
+      "term": "probar",
+      "definition": "to taste, to try"
+    },
+    {
+      "term": "alegrarse",
+      "definition": "to be glad"
+    },
+    {
+      "term": "el porche",
+      "definition": "the porch"
+    },
+    {
+      "term": "el cariño",
+      "definition": "affection"
+    }
+  ],
+  "exercises": [
+    {
+      "id": "es-b1-una-carta-a-mi-abuela-q1",
+      "type": "multiple_choice",
+      "item_id": "es.story.es-b1-una-carta-a-mi-abuela.1",
+      "prompt": "¿Qué encontró Camila la semana pasada?",
+      "choices": [
+        "Una foto vieja de su infancia",
+        "Una carta antigua de su abuela",
+        "Un libro de recetas"
+      ],
+      "answer": "Una foto vieja de su infancia"
+    },
+    {
+      "id": "es-b1-una-carta-a-mi-abuela-q2",
+      "type": "true_false",
+      "item_id": "es.story.es-b1-una-carta-a-mi-abuela.2",
+      "prompt": "A Camila le salió el guiso de lentejas perfecto la primera vez.",
+      "choices": [
+        "Verdadero",
+        "Falso"
+      ],
+      "answer": "Falso"
+    },
+    {
+      "id": "es-b1-una-carta-a-mi-abuela-q3",
+      "type": "cloze",
+      "item_id": "es.story.es-b1-una-carta-a-mi-abuela.3",
+      "prompt": "Quiero sentarme contigo en el ___, tomar café y escuchar tus historias.",
+      "answer": "porche"
+    },
+    {
+      "id": "es-b1-una-carta-a-mi-abuela-q4",
+      "type": "short_answer",
+      "item_id": "es.story.es-b1-una-carta-a-mi-abuela.4",
+      "prompt": "¿Qué noticia sobre la salud de la abuela le contó su hermano?",
+      "rubric": "Passes if the answer mentions the grandmother went to the doctor and everything was fine (fue al médico y todo salió bien)."
+    }
+  ],
+  "audio": null,
+  "source": {
+    "generator": "hand-authored",
+    "reviewed_by": "agent-t7b",
+    "generated_at": "2026-07-11"
+  }
+}
