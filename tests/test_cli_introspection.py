@@ -15,7 +15,7 @@ def test_overview_text(capsys: pytest.CaptureFixture[str]) -> None:
     rc = main(["overview"])
     assert rc == 0
     out = capsys.readouterr().out
-    assert "# spanish" in out
+    assert "# spanish-cli" in out
     assert "Identity" in out
 
 
@@ -23,7 +23,10 @@ def test_overview_json_shape(capsys: pytest.CaptureFixture[str]) -> None:
     rc = main(["overview", "--json"])
     assert rc == 0
     payload = json.loads(capsys.readouterr().out)
+    # Reconciled: the contract subject id is `spanish`, and the agent-first
+    # rubric's `sections` key is kept alongside it (open payload).
     assert payload["subject"] == "spanish"
+    assert payload["kind"] == "subject_overview"
     assert isinstance(payload["sections"], list)
     assert payload["sections"]
 
@@ -41,14 +44,14 @@ def test_overview_graceful_on_bad_path(capsys: pytest.CaptureFixture[str]) -> No
 def test_cli_overview_text(capsys: pytest.CaptureFixture[str]) -> None:
     rc = main(["cli", "overview"])
     assert rc == 0
-    assert "# spanish cli" in capsys.readouterr().out
+    assert "# spanish-cli cli" in capsys.readouterr().out
 
 
 def test_cli_overview_json_shape(capsys: pytest.CaptureFixture[str]) -> None:
     rc = main(["cli", "overview", "--json"])
     assert rc == 0
     payload = json.loads(capsys.readouterr().out)
-    assert payload["subject"] == "spanish cli"
+    assert payload["subject"] == "spanish-cli cli"
     assert isinstance(payload["sections"], list)
 
 
@@ -76,13 +79,13 @@ def test_cli_overview_unknown_flag_structured_error(
 
 def test_doctor_text(capsys: pytest.CaptureFixture[str]) -> None:
     rc = main(["doctor"])
-    assert rc in (0, 1)
-    assert "spanish doctor" in capsys.readouterr().out
+    assert rc in (0, 2)  # contract: 0 healthy, 2 unhealthy
+    assert "spanish-cli doctor" in capsys.readouterr().out
 
 
 def test_doctor_json_shape(capsys: pytest.CaptureFixture[str]) -> None:
     rc = main(["doctor", "--json"])
-    assert rc in (0, 1)
+    assert rc in (0, 2)
     payload = json.loads(capsys.readouterr().out)
     assert isinstance(payload["healthy"], bool)
     assert isinstance(payload["checks"], list)

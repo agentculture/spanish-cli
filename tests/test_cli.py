@@ -62,7 +62,7 @@ def test_learn_text(capsys: pytest.CaptureFixture[str]) -> None:
     assert rc == 0
     out = capsys.readouterr().out
     assert len(out) >= 200
-    assert "spanish whoami" in out
+    assert "spanish-cli" in out
     assert "Exit-code policy" in out
     assert "--json" in out
     assert "explain" in out
@@ -72,7 +72,9 @@ def test_learn_json(capsys: pytest.CaptureFixture[str]) -> None:
     rc = main(["learn", "--json"])
     assert rc == 0
     payload = json.loads(capsys.readouterr().out)
-    assert payload["tool"] == "spanish"
+    # `tool` is the distribution / mesh nick; `command` is what you invoke.
+    assert payload["tool"] == "spanish-cli"
+    assert payload["command"] == "spanish"
     assert payload["version"] == __version__
     assert payload["json_support"] is True
 
@@ -83,21 +85,32 @@ def test_learn_json(capsys: pytest.CaptureFixture[str]) -> None:
 def test_explain_root(capsys: pytest.CaptureFixture[str]) -> None:
     rc = main(["explain"])
     assert rc == 0
-    assert "# spanish" in capsys.readouterr().out
+    out = capsys.readouterr().out
+    # Titled by the command; names the distribution so both are discoverable.
+    assert out.startswith("# spanish\n")
+    assert "spanish-cli" in out
 
 
 def test_explain_self(capsys: pytest.CaptureFixture[str]) -> None:
-    """The rubric's explain_self check probes the console-script name."""
-    rc = main(["explain", "spanish"])
-    assert rc == 0
-    assert capsys.readouterr().out.startswith("#")
+    # The agent-first rubric resolves the tool's name from [project.scripts]
+    # and requires `explain <that name>` to work. The console script is
+    # `spanish`; `spanish-cli` is the distribution / mesh nick. Both resolve.
+    for name in ("spanish", "spanish-cli"):
+        rc = main(["explain", name])
+        assert rc == 0, f"explain {name} failed"
+        assert capsys.readouterr().out.startswith("#")
 
 
-def test_explain_dist_name_alias(capsys: pytest.CaptureFixture[str]) -> None:
-    """`explain spanish-cli` (the distribution name) still resolves to the root."""
-    rc = main(["explain", "spanish-cli"])
-    assert rc == 0
-    assert "# spanish" in capsys.readouterr().out
+def test_explain_self_matches_console_script() -> None:
+    """`explain <console-script>` must resolve — this is what the rubric checks.
+
+    Guards the defect that made `teken cli doctor --strict` fail: the catalog
+    keyed its root on the distribution name while the script was named `spanish`.
+    """
+    from spanish.explain import known_paths
+
+    assert ("spanish",) in known_paths()
+    assert ("spanish-cli",) in known_paths()
 
 
 def test_explain_json(capsys: pytest.CaptureFixture[str]) -> None:
@@ -121,3 +134,28 @@ def test_every_catalog_path_resolves(capsys: pytest.CaptureFixture[str]) -> None
         rc = main(["explain", *path])
         assert rc == 0, f"explain {' '.join(path)} failed"
         capsys.readouterr()
+
+
+def _registered_paths() -> list[tuple[str, ...]]:
+    """Every command path registered in the argparse tree (nouns + subverbs)."""
+    import argparse
+
+    from spanish.cli import _build_parser
+
+    def walk(parser, prefix: tuple[str, ...]) -> list[tuple[str, ...]]:
+        found: list[tuple[str, ...]] = []
+        for action in parser._actions:
+            if isinstance(action, argparse._SubParsersAction):
+                for name, subparser in action.choices.items():
+                    found.append(prefix + (name,))
+                    found.extend(walk(subparser, prefix + (name,)))
+        return found
+
+    return walk(_build_parser(), ())
+
+
+def test_every_registered_path_has_catalog_entry() -> None:
+    """Every registered noun/verb path must have an explain catalog entry."""
+    catalog = set(known_paths())
+    missing = [p for p in _registered_paths() if p not in catalog]
+    assert missing == [], f"registered paths missing an explain entry: {missing}"
