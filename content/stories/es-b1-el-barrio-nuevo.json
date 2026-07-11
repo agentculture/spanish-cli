@@ -84,6 +84,25 @@
       "item_id": "es.story.es-b1-el-barrio-nuevo.4",
       "prompt": "¿Qué tres lugares descubrió Diego en el barrio nuevo?",
       "rubric": "Passes if the answer names the bakery, the basketball court, and the library (la panadería, la cancha de básquetbol, la biblioteca); two of three is partial."
+    },
+    {
+      "id": "es-b1-el-barrio-nuevo-q5",
+      "type": "cloze",
+      "item_id": "es.story.es-b1-el-barrio-nuevo.1",
+      "prompt": "Completa el espacio con la preposición correcta (por vs. para).",
+      "text": "Diego decidió aceptar la invitación {{prep}} conocer a los chicos del barrio nuevo.",
+      "blanks": [
+        {
+          "id": "prep",
+          "options": [
+            "para",
+            "por",
+            "porque"
+          ],
+          "answer": "para"
+        }
+      ],
+      "answer": "para"
     }
   ],
   "audio": null,

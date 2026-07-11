@@ -111,6 +111,25 @@
       "item_id": "es.story.es-c1-el-ultimo-tren-a-buenos-aires.5",
       "prompt": "El cuento usa voseo rioplatense (\"vos sos\", \"encontrás\", \"dejate\") en vez de \"tú eres\", \"encuentras\", \"déjate\". Reescribe la frase de Renata \"Dejate sorprender por la que encontrás ahora\" usando la forma de tú.",
       "rubric": "Passes if the learner correctly converts both verbs: 'Déjate sorprender por la que encuentras ahora.'"
+    },
+    {
+      "id": "es-c1-el-ultimo-tren-a-buenos-aires-q6",
+      "type": "cloze",
+      "item_id": "es.story.es-c1-el-ultimo-tren-a-buenos-aires.5",
+      "prompt": "Completa el espacio con la forma correcta de 'ser' en voseo rioplatense.",
+      "text": "—¿Vos {{verbo}} de acá? —le preguntó la mujer a Julián.",
+      "blanks": [
+        {
+          "id": "verbo",
+          "options": [
+            "sos",
+            "eres",
+            "sois"
+          ],
+          "answer": "sos"
+        }
+      ],
+      "answer": "sos"
     }
   ],
   "audio": null,

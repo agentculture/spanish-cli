@@ -1,6 +1,6 @@
 [project]
 name = "spanish-cli"
-version = "0.6.0"
+version = "0.7.0"
 description = "Agent + CLI that turns Claude into a private Spanish tutor: track progress, get an overview, get advice, read stories, and learn & practice Spanish (written and spoken) online from your phone."
 readme = "README.md"
 license = "Apache-2.0"

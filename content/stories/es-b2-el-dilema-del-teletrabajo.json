@@ -100,6 +100,25 @@
       "item_id": "es.story.es-b2-el-dilema-del-teletrabajo.5",
       "prompt": "¿Estás de acuerdo con Beatriz en que es difícil construir relaciones profesionales sin verse en persona? Explica tu opinión usando el subjuntivo al menos una vez (por ejemplo, con \"dudo que\" o \"no creo que\").",
       "rubric": "Open-ended: passes if the learner states a clear opinion and correctly uses a subjunctive trigger phrase; a plausible opinion without the subjunctive is partial."
+    },
+    {
+      "id": "es-b2-el-dilema-del-teletrabajo-q6",
+      "type": "cloze",
+      "item_id": "es.story.es-b2-el-dilema-del-teletrabajo.3",
+      "prompt": "Completa el espacio con la forma correcta del subjuntivo (no creo que + subjuntivo).",
+      "text": "No creo que la oficina {{verbo}} la única solución al problema de Renata.",
+      "blanks": [
+        {
+          "id": "verbo",
+          "options": [
+            "sea",
+            "es",
+            "será"
+          ],
+          "answer": "sea"
+        }
+      ],
+      "answer": "sea"
     }
   ],
   "audio": null,

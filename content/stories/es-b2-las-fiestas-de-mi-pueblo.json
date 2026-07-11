@@ -106,6 +106,25 @@
       "item_id": "es.story.es-b2-las-fiestas-de-mi-pueblo.5",
       "prompt": "El texto usa vocabulario y platos regionales de México (las posadas, los romeritos, la cuadra). ¿Qué tradición navideña de tu propia cultura podrías comparar con las posadas?",
       "rubric": "Open-ended: passes if the learner names a comparable tradition and draws at least one concrete point of comparison, in Spanish."
+    },
+    {
+      "id": "es-b2-las-fiestas-de-mi-pueblo-q6",
+      "type": "cloze",
+      "item_id": "es.story.es-b2-las-fiestas-de-mi-pueblo.1",
+      "prompt": "Completa el espacio con la forma correcta (pretérito vs. imperfecto para acciones habituales).",
+      "text": "Cada noche, un grupo de vecinos {{verbo}} las calles cantando villancicos.",
+      "blanks": [
+        {
+          "id": "verbo",
+          "options": [
+            "recorría",
+            "recorrió",
+            "recorre"
+          ],
+          "answer": "recorría"
+        }
+      ],
+      "answer": "recorría"
     }
   ],
   "audio": null,

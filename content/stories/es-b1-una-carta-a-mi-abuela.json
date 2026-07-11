@@ -84,6 +84,25 @@
       "item_id": "es.story.es-b1-una-carta-a-mi-abuela.4",
       "prompt": "¿Qué noticia sobre la salud de la abuela le contó su hermano?",
       "rubric": "Passes if the answer mentions the grandmother went to the doctor and everything was fine (fue al médico y todo salió bien)."
+    },
+    {
+      "id": "es-b1-una-carta-a-mi-abuela-q5",
+      "type": "cloze",
+      "item_id": "es.story.es-b1-una-carta-a-mi-abuela.1",
+      "prompt": "Completa el espacio con el pronombre de objeto indirecto correcto.",
+      "text": "Olvido las cosas simples que tú siempre {{pron}} enseñaste, abuela.",
+      "blanks": [
+        {
+          "id": "pron",
+          "options": [
+            "me",
+            "te",
+            "le"
+          ],
+          "answer": "me"
+        }
+      ],
+      "answer": "me"
     }
   ],
   "audio": null,
