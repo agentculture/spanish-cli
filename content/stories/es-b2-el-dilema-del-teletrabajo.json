@@ -1,0 +1,111 @@
+{
+  "schema_version": "1.0",
+  "kind": "story",
+  "id": "es-b2-el-dilema-del-teletrabajo",
+  "subject": "spanish",
+  "title": "El dilema del teletrabajo",
+  "level": "advanced",
+  "level_detail": "B2",
+  "language": "es",
+  "summary": "Renata weighs returning to the office against keeping her remote routine.",
+  "body": "Desde que la empresa anunció que el teletrabajo dejaría de ser obligatorio,\nRenata no ha dejado de pensar en qué decisión tomar. Su jefe le ha propuesto\ndos opciones: volver a la oficina cuatro días a la semana o continuar\ntrabajando desde casa, aunque esto último implicaría renunciar a ciertos\nbeneficios, como el bono de transporte.\n\nRenata lleva casi tres años trabajando desde su apartamento y, con el\ntiempo, ha desarrollado una rutina que le funciona bien. Empieza a trabajar\ntemprano, hace pausas para cocinar y, por las tardes, tiene tiempo de sobra\npara hacer ejercicio. Sin embargo, también reconoce que a veces se siente\naislada y que extraña las conversaciones espontáneas con sus compañeros.\n\nSu amiga Beatriz, que regresó a la oficina hace unos meses, le insiste en\nque es importante que vuelva.\n\n—Entiendo que estés cómoda en casa —le dijo Beatriz durante el almuerzo—,\npero dudo que puedas construir buenas relaciones profesionales si nunca ves\na nadie en persona. Además, no creo que sea sano pasar tantas horas solas\nfrente a la pantalla.\n\nRenata reconoce que su amiga tiene razón en algunos puntos, pero no está\nconvencida de que la oficina sea la única solución. Le preocupa perder la\nflexibilidad que le permite cuidar a su madre, quien vive sola y necesita\nayuda con frecuencia.\n\nDespués de varios días de dudas, Renata decidió proponerle a su jefe un plan\nintermedio: ir a la oficina dos días a la semana, para mantener el contacto\ncon el equipo, y trabajar desde casa el resto del tiempo.\n\nPara su sorpresa, su jefe aceptó la propuesta sin poner objeciones. Le\nexplicó que lo que más le importaba a la empresa no era dónde trabajaran los\nempleados, sino que cumplieran con sus responsabilidades y se sintieran\nmotivados.\n\nRenata salió de esa reunión con una sensación de alivio. Había encontrado,\nal menos por ahora, un equilibrio entre lo que necesitaba su carrera y lo\nque necesitaba su vida personal.",
+  "glossary": [
+    {
+      "term": "el teletrabajo",
+      "definition": "remote work, telecommuting"
+    },
+    {
+      "term": "renunciar a",
+      "definition": "to give up, to forfeit"
+    },
+    {
+      "term": "el bono de transporte",
+      "definition": "the transportation stipend"
+    },
+    {
+      "term": "aislado(a)",
+      "definition": "isolated"
+    },
+    {
+      "term": "dudar que + subjuntivo",
+      "definition": "to doubt that…",
+      "note": "Triggers the subjunctive: dudo que puedas, no creo que sea."
+    },
+    {
+      "term": "sano/a",
+      "definition": "healthy"
+    },
+    {
+      "term": "convencido(a)",
+      "definition": "convinced"
+    },
+    {
+      "term": "la propuesta",
+      "definition": "the proposal"
+    },
+    {
+      "term": "poner objeciones",
+      "definition": "to raise objections"
+    },
+    {
+      "term": "cumplir con",
+      "definition": "to fulfill, to follow through on"
+    },
+    {
+      "term": "el equilibrio",
+      "definition": "balance"
+    }
+  ],
+  "exercises": [
+    {
+      "id": "es-b2-el-dilema-del-teletrabajo-q1",
+      "type": "multiple_choice",
+      "item_id": "es.story.es-b2-el-dilema-del-teletrabajo.1",
+      "prompt": "¿Qué opciones le da la empresa a Renata?",
+      "choices": [
+        "Volver a la oficina cuatro días o seguir en casa sin ciertos beneficios",
+        "Renunciar al trabajo o mudarse de ciudad",
+        "Trabajar de noche o de día"
+      ],
+      "answer": "Volver a la oficina cuatro días o seguir en casa sin ciertos beneficios"
+    },
+    {
+      "id": "es-b2-el-dilema-del-teletrabajo-q2",
+      "type": "true_false",
+      "item_id": "es.story.es-b2-el-dilema-del-teletrabajo.2",
+      "prompt": "El jefe de Renata rechaza el plan intermedio que ella propone.",
+      "choices": [
+        "Verdadero",
+        "Falso"
+      ],
+      "answer": "Falso"
+    },
+    {
+      "id": "es-b2-el-dilema-del-teletrabajo-q3",
+      "type": "cloze",
+      "item_id": "es.story.es-b2-el-dilema-del-teletrabajo.3",
+      "prompt": "Dudo que puedas construir buenas relaciones profesionales si nunca ves a nadie en ___.",
+      "answer": "persona"
+    },
+    {
+      "id": "es-b2-el-dilema-del-teletrabajo-q4",
+      "type": "short_answer",
+      "item_id": "es.story.es-b2-el-dilema-del-teletrabajo.4",
+      "prompt": "¿Por qué le preocupa a Renata perder la flexibilidad del teletrabajo?",
+      "rubric": "Passes if the answer mentions caring for her mother, who lives alone and needs frequent help (cuidar a su madre, que vive sola)."
+    },
+    {
+      "id": "es-b2-el-dilema-del-teletrabajo-q5",
+      "type": "discussion",
+      "item_id": "es.story.es-b2-el-dilema-del-teletrabajo.5",
+      "prompt": "¿Estás de acuerdo con Beatriz en que es difícil construir relaciones profesionales sin verse en persona? Explica tu opinión usando el subjuntivo al menos una vez (por ejemplo, con \"dudo que\" o \"no creo que\").",
+      "rubric": "Open-ended: passes if the learner states a clear opinion and correctly uses a subjunctive trigger phrase; a plausible opinion without the subjunctive is partial."
+    }
+  ],
+  "audio": null,
+  "source": {
+    "generator": "hand-authored",
+    "reviewed_by": "agent-t7b",
+    "generated_at": "2026-07-11"
+  }
+}

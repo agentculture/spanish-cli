@@ -1,0 +1,87 @@
+{
+  "schema_version": "1.0",
+  "kind": "story",
+  "id": "es-a2-el-cumpleanos-de-lucia",
+  "subject": "spanish",
+  "title": "El cumpleaños de Lucía",
+  "level": "beginner",
+  "level_detail": "A2",
+  "language": "es",
+  "summary": "Lucía's family plans a surprise eighth-birthday party for her.",
+  "body": "La semana que viene, Lucía va a cumplir ocho años y su familia está\norganizando una fiesta sorpresa.\n\nSu hermano mayor, Tomás, va a decorar el jardín con globos de colores y una\npancarta que dice «¡Feliz cumpleaños, Lucía!». Su mamá va a preparar un\npastel de fresas, porque es el favorito de Lucía.\n\nLos abuelos van a traer una piñata en forma de estrella. Dentro de la piñata\nhay dulces y pequeños juguetes para todos los niños invitados.\n\nTomás ya invitó a los compañeros de clase de Lucía y a sus primos. En total,\nvan a venir doce personas a la fiesta.\n\nEl día de la fiesta, Lucía va a llegar a casa después del colegio sin saber\nnada. Cuando abra la puerta, todos van a gritar «¡Sorpresa!» al mismo tiempo.\n\nDespués de cantar «Feliz cumpleaños» y soplar las velas, los niños van a\njugar juegos en el jardín. Al final de la tarde, cada invitado va a recibir\nuna pequeña bolsa con dulces para llevar a casa.\n\nLucía todavía no sabe nada, pero está muy emocionada porque sabe que algo\nespecial va a pasar pronto.",
+  "glossary": [
+    {
+      "term": "cumplir años",
+      "definition": "to turn a certain age, to have a birthday"
+    },
+    {
+      "term": "la pancarta",
+      "definition": "the banner"
+    },
+    {
+      "term": "la piñata",
+      "definition": "the piñata"
+    },
+    {
+      "term": "soplar las velas",
+      "definition": "to blow out the candles"
+    },
+    {
+      "term": "el/la invitado(a)",
+      "definition": "the guest"
+    },
+    {
+      "term": "emocionado(a)",
+      "definition": "excited"
+    },
+    {
+      "term": "la sorpresa",
+      "definition": "the surprise"
+    }
+  ],
+  "exercises": [
+    {
+      "id": "es-a2-el-cumpleanos-de-lucia-q1",
+      "type": "multiple_choice",
+      "item_id": "es.story.es-a2-el-cumpleanos-de-lucia.1",
+      "prompt": "¿Quién va a decorar el jardín?",
+      "choices": [
+        "Tomás, el hermano mayor",
+        "Los abuelos",
+        "La mamá de Lucía"
+      ],
+      "answer": "Tomás, el hermano mayor"
+    },
+    {
+      "id": "es-a2-el-cumpleanos-de-lucia-q2",
+      "type": "true_false",
+      "item_id": "es.story.es-a2-el-cumpleanos-de-lucia.2",
+      "prompt": "Lucía ya sabe que sus amigos van a hacerle una fiesta.",
+      "choices": [
+        "Verdadero",
+        "Falso"
+      ],
+      "answer": "Falso"
+    },
+    {
+      "id": "es-a2-el-cumpleanos-de-lucia-q3",
+      "type": "cloze",
+      "item_id": "es.story.es-a2-el-cumpleanos-de-lucia.3",
+      "prompt": "Los abuelos van a traer una piñata en forma de ___.",
+      "answer": "estrella"
+    },
+    {
+      "id": "es-a2-el-cumpleanos-de-lucia-q4",
+      "type": "short_answer",
+      "item_id": "es.story.es-a2-el-cumpleanos-de-lucia.4",
+      "prompt": "¿Cuántas personas van a venir a la fiesta y quiénes son?",
+      "rubric": "Passes if the answer says twelve people, including classmates and cousins (compañeros de clase y primos); naming only the number is partial."
+    }
+  ],
+  "audio": null,
+  "source": {
+    "generator": "hand-authored",
+    "reviewed_by": "agent-t7b",
+    "generated_at": "2026-07-11"
+  }
+}

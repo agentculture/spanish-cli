@@ -1,0 +1,102 @@
+{
+  "schema_version": "1.0",
+  "kind": "story",
+  "id": "es-b1-el-tren-perdido",
+  "subject": "spanish",
+  "title": "El tren perdido",
+  "level": "intermediate",
+  "level_detail": "B1",
+  "language": "es",
+  "summary": "Martín oversleeps, misses his train, and calls his boss to explain.",
+  "body": "Martín se despertó tarde aquella mañana porque su despertador no sonó. Miró\nel reloj y se dio cuenta de que solo tenía veinte minutos para llegar a la\nestación.\n\nSe vistió rápidamente, no desayunó y salió de su apartamento casi corriendo.\nEn la calle, no encontró ningún taxi libre, así que decidió correr hacia la\nestación de metro más cercana.\n\nCuando por fin llegó al andén, el tren ya estaba cerrando las puertas. Martín\nintentó llegar a tiempo, pero fue inútil: el tren salió justo delante de sus\nojos.\n\n—¡No puede ser! —pensó, respirando con dificultad—. Ese era el único tren\nque llegaba a tiempo a mi reunión.\n\nFrustrado, se sentó en un banco del andén y sacó el teléfono para llamar a su\njefe. Le explicó la situación con calma y, para su sorpresa, su jefe no se\nenojó.\n\n—No te preocupes, Martín —le dijo—. Podemos empezar la reunión quince\nminutos más tarde. Avísame cuando estés cerca.\n\nAliviado, Martín esperó el siguiente tren, que llegó diez minutos después.\nDurante el viaje, pensó que debía comprar un despertador nuevo, uno más\nfuerte y confiable.\n\nCuando finalmente llegó a la oficina, sus compañeros lo recibieron con una\nsonrisa. Nadie se había dado cuenta de que había llegado tarde, porque la\nreunión todavía no había comenzado.\n\nEsa noche, antes de dormir, Martín programó tres alarmas diferentes. No\nquería repetir la misma experiencia nunca más.",
+  "glossary": [
+    {
+      "term": "el despertador",
+      "definition": "the alarm clock"
+    },
+    {
+      "term": "el andén",
+      "definition": "the (train) platform"
+    },
+    {
+      "term": "inútil",
+      "definition": "useless"
+    },
+    {
+      "term": "respirar con dificultad",
+      "definition": "to breathe heavily"
+    },
+    {
+      "term": "enojarse",
+      "definition": "to get angry"
+    },
+    {
+      "term": "aliviado(a)",
+      "definition": "relieved"
+    },
+    {
+      "term": "confiable",
+      "definition": "reliable"
+    },
+    {
+      "term": "darse cuenta de",
+      "definition": "to realize"
+    },
+    {
+      "term": "programar",
+      "definition": "to set / program (an alarm, a device)"
+    }
+  ],
+  "exercises": [
+    {
+      "id": "es-b1-el-tren-perdido-q1",
+      "type": "multiple_choice",
+      "item_id": "es.story.es-b1-el-tren-perdido.1",
+      "prompt": "¿Por qué se despertó tarde Martín?",
+      "choices": [
+        "Porque su despertador no sonó",
+        "Porque se quedó dormido leyendo",
+        "Porque el tren llegó antes de tiempo"
+      ],
+      "answer": "Porque su despertador no sonó"
+    },
+    {
+      "id": "es-b1-el-tren-perdido-q2",
+      "type": "true_false",
+      "item_id": "es.story.es-b1-el-tren-perdido.2",
+      "prompt": "El jefe de Martín se enojó mucho cuando se enteró.",
+      "choices": [
+        "Verdadero",
+        "Falso"
+      ],
+      "answer": "Falso"
+    },
+    {
+      "id": "es-b1-el-tren-perdido-q3",
+      "type": "cloze",
+      "item_id": "es.story.es-b1-el-tren-perdido.3",
+      "prompt": "Esa noche, Martín programó tres ___ diferentes.",
+      "answer": "alarmas"
+    },
+    {
+      "id": "es-b1-el-tren-perdido-q4",
+      "type": "short_answer",
+      "item_id": "es.story.es-b1-el-tren-perdido.4",
+      "prompt": "¿Cómo resolvió el jefe el problema de Martín?",
+      "rubric": "Passes if the answer mentions the meeting was pushed back fifteen minutes (empezar la reunión quince minutos más tarde)."
+    },
+    {
+      "id": "es-b1-el-tren-perdido-q5",
+      "type": "translation",
+      "item_id": "es.story.es-b1-el-tren-perdido.5",
+      "prompt": "Traduce al español: \"I realized I only had twenty minutes.\"",
+      "answer": "Me di cuenta de que solo tenía veinte minutos."
+    }
+  ],
+  "audio": null,
+  "source": {
+    "generator": "hand-authored",
+    "reviewed_by": "agent-t7b",
+    "generated_at": "2026-07-11"
+  }
+}
