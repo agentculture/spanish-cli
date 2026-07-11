@@ -76,6 +76,25 @@
       "item_id": "es.story.es-a2-un-dia-en-la-playa.4",
       "prompt": "¿Qué hicieron los amigos que no nadaron?",
       "rubric": "Passes if the answer mentions they played beach volleyball on the sand (jugaron vóley playa en la arena)."
+    },
+    {
+      "id": "es-a2-un-dia-en-la-playa-q5",
+      "type": "cloze",
+      "item_id": "es.story.es-a2-un-dia-en-la-playa.1",
+      "prompt": "Completa el espacio con la forma correcta del pretérito de 'ir'.",
+      "text": "Camila y sus amigos {{verbo}} a la playa por primera vez del verano.",
+      "blanks": [
+        {
+          "id": "verbo",
+          "options": [
+            "fueron",
+            "fue",
+            "van"
+          ],
+          "answer": "fueron"
+        }
+      ],
+      "answer": "fueron"
     }
   ],
   "audio": null,

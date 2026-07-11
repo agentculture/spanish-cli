@@ -72,6 +72,25 @@
       "item_id": "es.story.es-a1-mi-familia.4",
       "prompt": "Describe a Rex, el perro de la familia.",
       "rubric": "Passes if the answer mentions his colors (negro y blanco) and that he likes to run in the garden; naming only the colors is partial."
+    },
+    {
+      "id": "es-a1-mi-familia-q5",
+      "type": "cloze",
+      "item_id": "es.story.es-a1-mi-familia.1",
+      "prompt": "Completa el espacio con la palabra correcta (ser vs. estar).",
+      "text": "Mi papá {{ser_estar}} alto y trabaja en un hospital.",
+      "blanks": [
+        {
+          "id": "ser_estar",
+          "options": [
+            "es",
+            "está",
+            "son"
+          ],
+          "answer": "es"
+        }
+      ],
+      "answer": "es"
     }
   ],
   "audio": null,

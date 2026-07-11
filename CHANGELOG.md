@@ -5,6 +5,12 @@ All notable changes to this project will be documented in this file.
 Format follows [Keep a Changelog](https://keepachangelog.com/). This project
 adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.7.0] - 2026-07-11
+
+### Added
+
+- Pick-the-right-word cloze exercises (subject-plugin contract §3.6.1's `text`/`blanks` variant, additive within contract 1.0) across all eleven graded-reader stories, one per story, reusing each story's existing item_id and spanning ser/estar, por/para, ir a + infinitivo, preterite-vs-imperfect, subjunctive-after-doubt, gender/number agreement, and Rioplatense voseo distractors.
+
 ## [0.6.0] - 2026-07-11
 
 ### Added

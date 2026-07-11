@@ -91,6 +91,25 @@
       "item_id": "es.story.es-b1-la-entrevista-de-trabajo.5",
       "prompt": "¿Qué habrías respondido tú si te hubieran hecho la misma pregunta sobre un proyecto del que te sientas orgulloso/a?",
       "rubric": "Open-ended: passes if the learner describes a concrete project and connects it to a skill, in Spanish, using at least one past tense correctly."
+    },
+    {
+      "id": "es-b1-la-entrevista-de-trabajo-q6",
+      "type": "cloze",
+      "item_id": "es.story.es-b1-la-entrevista-de-trabajo.1",
+      "prompt": "Completa el espacio con la forma correcta (ser vs. estar).",
+      "text": "Antes de la entrevista, Valentina {{verbo}} un poco nerviosa en la sala de espera.",
+      "blanks": [
+        {
+          "id": "verbo",
+          "options": [
+            "estaba",
+            "era",
+            "fue"
+          ],
+          "answer": "estaba"
+        }
+      ],
+      "answer": "estaba"
     }
   ],
   "audio": null,

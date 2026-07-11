@@ -21,24 +21,46 @@ are flat under `content/stories/` and equal the story `id`.
 
 | id | level | level_detail | title | words | glossary | exercises |
 | --- | --- | --- | --- | --- | --- | --- |
-| `es-a1-el-mercado-de-frutas` | beginner | A1 | El mercado de frutas | 159 | 7 | 4 |
-| `es-a1-mi-familia` | beginner | A1 | Mi familia | 167 | 6 | 4 |
-| `es-a2-un-dia-en-la-playa` | beginner | A2 | Un día en la playa | 162 | 7 | 4 |
-| `es-a2-el-cumpleanos-de-lucia` | beginner | A2 | El cumpleaños de Lucía | 187 | 7 | 4 |
-| `es-b1-el-tren-perdido` | intermediate | B1 | El tren perdido | 232 | 9 | 5 |
-| `es-b1-la-entrevista-de-trabajo` | intermediate | B1 | La entrevista de trabajo | 256 | 9 | 5 |
-| `es-b1-una-carta-a-mi-abuela` | intermediate | B1 | Una carta a mi abuela | 241 | 9 | 4 |
-| `es-b1-el-barrio-nuevo` | intermediate | B1 | El barrio nuevo | 247 | 9 | 4 |
-| `es-b2-el-dilema-del-teletrabajo` | advanced | B2 | El dilema del teletrabajo | 325 | 11 | 5 |
-| `es-b2-las-fiestas-de-mi-pueblo` | advanced | B2 — Mexican Spanish register | Las fiestas de mi pueblo | 317 | 12 | 5 |
-| `es-c1-el-ultimo-tren-a-buenos-aires` | advanced | C1 — Argentine Spanish (voseo) | El último tren a Buenos Aires | 373 | 13 | 5 |
+| `es-a1-el-mercado-de-frutas` | beginner | A1 | El mercado de frutas | 159 | 7 | 5 |
+| `es-a1-mi-familia` | beginner | A1 | Mi familia | 167 | 6 | 5 |
+| `es-a2-un-dia-en-la-playa` | beginner | A2 | Un día en la playa | 162 | 7 | 5 |
+| `es-a2-el-cumpleanos-de-lucia` | beginner | A2 | El cumpleaños de Lucía | 187 | 7 | 5 |
+| `es-b1-el-tren-perdido` | intermediate | B1 | El tren perdido | 232 | 9 | 6 |
+| `es-b1-la-entrevista-de-trabajo` | intermediate | B1 | La entrevista de trabajo | 256 | 9 | 6 |
+| `es-b1-una-carta-a-mi-abuela` | intermediate | B1 | Una carta a mi abuela | 241 | 9 | 5 |
+| `es-b1-el-barrio-nuevo` | intermediate | B1 | El barrio nuevo | 247 | 9 | 5 |
+| `es-b2-el-dilema-del-teletrabajo` | advanced | B2 | El dilema del teletrabajo | 325 | 11 | 6 |
+| `es-b2-las-fiestas-de-mi-pueblo` | advanced | B2 — Mexican Spanish register | Las fiestas de mi pueblo | 317 | 12 | 6 |
+| `es-c1-el-ultimo-tren-a-buenos-aires` | advanced | C1 — Argentine Spanish (voseo) | El último tren a Buenos Aires | 373 | 13 | 6 |
 
 4 beginner (A1/A2), 4 intermediate (B1), 3 advanced (B2/C1) — a ladder, not a
 flat set. Word count and glossary density both climb with level: every story
 carries 3–5 glossary entries per 100 words of body text (ratios run
 3.38–4.40/100w across the set), and every story carries at least 3
-comprehension exercises (the two longest carry 5, including one open
+comprehension exercises (the two longest carry 6, including one open
 `discussion` exercise each for B1+ stories).
+
+**Pick-the-right-word cloze (task t12).** Every one of the eleven stories now
+also carries exactly one `type: "cloze"` exercise using the pick-the-right-word
+variant (contract §3.6.1: the `text`/`blanks` fields, additive to the existing
+single-blank `prompt`/`answer` form) — appended as that story's last exercise,
+so the four original per-story exercises (or five, for the two five-exercise
+B1 stories) are untouched. Each reuses an `item_id` already present on one of
+that story's other exercises (never a new one — `learn subject doctor`'s
+`cloze-items` check only requires the exercise's own `id` be unique, not the
+`item_id`) and targets a grammar point level-appropriate to the story's CEFR
+band: adjective gender/number agreement and `ser`/`estar` at A1, `ir a +
+infinitivo` and preterite `ir` at A2, `por`/`para` and preterite-vs-imperfect
+at B1, subjunctive-after-doubt (the `es-b2-el-dilema-del-teletrabajo` glossary
+already flags `dudar que + subjuntivo` — the new exercise reuses that same
+exercise's `item_id`) and imperfect-for-habitual-past at B2, and Rioplatense
+voseo (`vos sos` vs. `tú eres`) at C1, reusing the `item_id` of the existing
+voseo `discussion` exercise in `es-c1-el-ultimo-tren-a-buenos-aires`. One item
+(`es-a1-el-mercado-de-frutas`) carries two blanks in the same passage; the
+rest are single-blank. `content/stories/*.json` is the only thing this task
+changed — no CLI/engine code, since `story_read_payload` in
+`spanish/tutor/engine.py` already embeds the committed story dict verbatim
+(`"story": story`), so the new fields pass through untouched.
 
 Register is neutral Latin-American Spanish (`tú`, no `vosotros`) except two
 stories that are **deliberately regional**, each flagged in its own

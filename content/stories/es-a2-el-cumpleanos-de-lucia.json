@@ -76,6 +76,25 @@
       "item_id": "es.story.es-a2-el-cumpleanos-de-lucia.4",
       "prompt": "¿Cuántas personas van a venir a la fiesta y quiénes son?",
       "rubric": "Passes if the answer says twelve people, including classmates and cousins (compañeros de clase y primos); naming only the number is partial."
+    },
+    {
+      "id": "es-a2-el-cumpleanos-de-lucia-q5",
+      "type": "cloze",
+      "item_id": "es.story.es-a2-el-cumpleanos-de-lucia.1",
+      "prompt": "Completa el espacio con la forma correcta de 'ir a + infinitivo'.",
+      "text": "Tomás {{verbo}} a decorar el jardín con globos de colores.",
+      "blanks": [
+        {
+          "id": "verbo",
+          "options": [
+            "va",
+            "van",
+            "vamos"
+          ],
+          "answer": "va"
+        }
+      ],
+      "answer": "va"
     }
   ],
   "audio": null,

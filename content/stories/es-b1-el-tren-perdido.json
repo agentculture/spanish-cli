@@ -91,6 +91,25 @@
       "item_id": "es.story.es-b1-el-tren-perdido.5",
       "prompt": "Traduce al español: \"I realized I only had twenty minutes.\"",
       "answer": "Me di cuenta de que solo tenía veinte minutos."
+    },
+    {
+      "id": "es-b1-el-tren-perdido-q6",
+      "type": "cloze",
+      "item_id": "es.story.es-b1-el-tren-perdido.1",
+      "prompt": "Completa el espacio con la forma correcta (pretérito vs. imperfecto).",
+      "text": "Cuando por fin Martín {{verbo}} al andén, el tren ya estaba cerrando las puertas.",
+      "blanks": [
+        {
+          "id": "verbo",
+          "options": [
+            "llegó",
+            "llegaba",
+            "llega"
+          ],
+          "answer": "llegó"
+        }
+      ],
+      "answer": "llegó"
     }
   ],
   "audio": null,

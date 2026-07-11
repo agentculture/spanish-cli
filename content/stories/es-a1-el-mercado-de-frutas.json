@@ -77,6 +77,33 @@
       "item_id": "es.story.es-a1-el-mercado-de-frutas.4",
       "prompt": "¿Por qué le gustan los plátanos a Ana?",
       "rubric": "Passes if the answer mentions that they are sweet and easy to eat (son dulces y fáciles de comer); naming only one of the two reasons is partial."
+    },
+    {
+      "id": "es-a1-el-mercado-de-frutas-q5",
+      "type": "cloze",
+      "item_id": "es.story.es-a1-el-mercado-de-frutas.1",
+      "prompt": "Completa cada espacio con la palabra correcta (concordancia de género y número).",
+      "text": "En el mercado hay frutas de muchos colores: manzanas {{adj1}} y plátanos {{adj2}}.",
+      "blanks": [
+        {
+          "id": "adj1",
+          "options": [
+            "rojas",
+            "rojo",
+            "rojos"
+          ],
+          "answer": "rojas"
+        },
+        {
+          "id": "adj2",
+          "options": [
+            "amarillos",
+            "amarilla",
+            "amarillas"
+          ],
+          "answer": "amarillos"
+        }
+      ]
     }
   ],
   "audio": null,
