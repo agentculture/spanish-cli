@@ -1,14 +1,16 @@
 # Spanish graded-reader story ladder
 
 Committed content for spanish-cli's `story list` / `story read` verbs (the
-`spanish/cli/_commands/story.py` driver arrives later, ported from french-cli by
-a sibling task). This file documents what is here, the schema it must satisfy,
-the reproducible pipeline used to author it, and the checklist a human reviews
-before merge.
+`spanish/cli/_commands/story.py` driver was ported from french-cli by task t5 of
+the learn uplift — see [`contract-provenance.md`](contract-provenance.md)). This
+file documents what is here, the schema it must satisfy, the reproducible
+pipeline used to author it, and the checklist a human reviews before merge.
 
-**Content only.** This task touches `content/stories/*.json` and this file —
-no CLI code, no tests, no `pyproject.toml`/CI changes. The story schema and its
-validator live in the sibling `learn-cli` repo
+**Content-first origin.** This document originally accompanied a content-only
+task (`content/stories/*.json` + this file, no CLI code); the CLI/tests/
+`pyproject.toml` changes that make these stories reachable via `story list`/
+`story read` landed later, in the same port that added `dev-*.json`. The story
+schema and its validator live in the sibling `learn-cli` repo
 (`learn/contract/schemas/story.json`, `learn/contract/_validate.py`); spanish-cli
 does not vendor a copy of either.
 

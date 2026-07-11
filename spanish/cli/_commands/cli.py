@@ -15,7 +15,7 @@ from spanish.cli._commands.overview import cli_sections, emit_overview
 
 def cmd_cli_overview(args: argparse.Namespace) -> int:
     emit_overview(
-        "spanish cli",
+        "spanish-cli cli",
         cli_sections(),
         json_mode=bool(getattr(args, "json", False)),
     )
@@ -38,6 +38,6 @@ def register(sub: argparse._SubParsersAction) -> None:
     # parser_class); propagate it so `cli overview` parse errors route through
     # the structured error contract instead of argparse's default stderr/exit 2.
     noun_sub = p.add_subparsers(dest="cli_command", parser_class=type(p))
-    ov = noun_sub.add_parser("overview", help="Describe the spanish CLI surface.")
+    ov = noun_sub.add_parser("overview", help="Describe the spanish-cli CLI surface.")
     ov.add_argument("--json", action="store_true", help="Emit structured JSON.")
     ov.set_defaults(func=cmd_cli_overview)

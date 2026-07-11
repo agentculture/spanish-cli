@@ -1,0 +1,66 @@
+{
+  "schema_version": "1.0",
+  "kind": "story",
+  "id": "dev-directions",
+  "subject": "spanish",
+  "title": "¿Dónde está la estación?",
+  "level": "intermediate",
+  "level_detail": "A2",
+  "language": "es",
+  "summary": "Lost in town, Hugo asks a passer-by for the way to the station.",
+  "body": "Hugo está perdido. Busca la estación.\n\nDetiene a una señora en la calle. «Perdone, señora. ¿Dónde está la estación, por favor?»\n\n«Es fácil», responde la señora. «Siga todo recto y luego gire a la izquierda en la esquina. La estación está a cinco minutos a pie.»\n\n«¡Muchas gracias!» dice Hugo. Gira a la izquierda y encuentra la estación enseguida.",
+  "glossary": [
+    {
+      "term": "busco",
+      "definition": "I am looking for",
+      "note": "De «buscar»; «busco la estación»."
+    },
+    {
+      "term": "todo recto",
+      "definition": "straight ahead"
+    },
+    {
+      "term": "gire a la izquierda",
+      "definition": "turn left",
+      "note": "«a la derecha» es hacia la derecha."
+    },
+    {
+      "term": "a cinco minutos a pie",
+      "definition": "five minutes away on foot"
+    }
+  ],
+  "exercises": [
+    {
+      "id": "dev-directions-q1",
+      "type": "multiple_choice",
+      "item_id": "es.ciudad.direcciones",
+      "prompt": "¿Qué busca Hugo?",
+      "choices": [
+        "La estación",
+        "El mercado",
+        "El café"
+      ],
+      "answer": "La estación"
+    },
+    {
+      "id": "dev-directions-q2",
+      "type": "cloze",
+      "item_id": "es.ciudad.direcciones",
+      "prompt": "Siga todo recto y luego gire a la ___ en la esquina.",
+      "answer": "izquierda"
+    },
+    {
+      "id": "dev-directions-q3",
+      "type": "short_answer",
+      "item_id": "es.ciudad.direcciones",
+      "prompt": "¿A cuántos minutos a pie está la estación?",
+      "rubric": "Aprueba con «cinco minutos» (o «5 minutos»); cualquier otra respuesta es fallo."
+    }
+  ],
+  "audio": null,
+  "source": {
+    "generator": "hand-authored",
+    "reviewed_by": "spanish-cli t5",
+    "generated_at": "2026-07-11"
+  }
+}

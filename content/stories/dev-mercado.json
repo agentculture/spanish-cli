@@ -1,0 +1,78 @@
+{
+  "schema_version": "1.0",
+  "kind": "story",
+  "id": "dev-mercado",
+  "subject": "spanish",
+  "title": "El mercado del sábado",
+  "level": "beginner",
+  "level_detail": "A1",
+  "language": "es",
+  "summary": "Clara buys apples, bread, and cheese at the Saturday market.",
+  "body": "El sábado por la mañana, Clara va al mercado.\n\nCompra un kilo de manzanas rojas. «¡Buenos días, señora! Un kilo de manzanas, por favor.» El vendedor dice: «Aquí tiene, son dos euros.»\n\nDespués, Clara compra pan y queso de cabra. Le encanta el queso.\n\nAl mediodía, vuelve a casa y prepara un almuerzo sencillo: pan, queso y una manzana.",
+  "glossary": [
+    {
+      "term": "el mercado",
+      "definition": "the market",
+      "note": "«un mercado al aire libre» es un mercado al aire libre / open-air market."
+    },
+    {
+      "term": "un kilo de manzanas",
+      "definition": "a kilo of apples",
+      "note": "Las cantidades llevan de: un kilo de, una rebanada de."
+    },
+    {
+      "term": "el queso de cabra",
+      "definition": "goat cheese"
+    },
+    {
+      "term": "vuelve a casa",
+      "definition": "she goes back home"
+    }
+  ],
+  "exercises": [
+    {
+      "id": "dev-mercado-q1",
+      "type": "multiple_choice",
+      "item_id": "es.comida.mercado",
+      "prompt": "¿Cuándo va Clara al mercado?",
+      "choices": [
+        "El sábado por la mañana",
+        "El domingo por la noche",
+        "El lunes al mediodía"
+      ],
+      "answer": "El sábado por la mañana"
+    },
+    {
+      "id": "dev-mercado-q2",
+      "type": "multiple_choice",
+      "item_id": "es.numeros.precios",
+      "prompt": "¿Cuánto cuestan las manzanas?",
+      "choices": [
+        "Dos euros",
+        "Cuatro euros",
+        "Diez euros"
+      ],
+      "answer": "Dos euros"
+    },
+    {
+      "id": "dev-mercado-q3",
+      "type": "cloze",
+      "item_id": "es.comida.mercado",
+      "prompt": "Clara compra pan y ___ de cabra.",
+      "answer": "queso"
+    },
+    {
+      "id": "dev-mercado-q4",
+      "type": "short_answer",
+      "item_id": "es.comida.mercado",
+      "prompt": "¿Qué come Clara al mediodía?",
+      "rubric": "Cualquier respuesta que mencione pan, queso y/o una manzana aprueba; un solo elemento es parcial."
+    }
+  ],
+  "audio": null,
+  "source": {
+    "generator": "hand-authored",
+    "reviewed_by": "spanish-cli t5",
+    "generated_at": "2026-07-11"
+  }
+}

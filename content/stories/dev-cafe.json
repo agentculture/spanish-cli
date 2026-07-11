@@ -1,0 +1,66 @@
+{
+  "schema_version": "1.0",
+  "kind": "story",
+  "id": "dev-cafe",
+  "subject": "spanish",
+  "title": "Un café, por favor",
+  "level": "beginner",
+  "level_detail": "A1",
+  "language": "es",
+  "summary": "Pablo orders a coffee and a croissant, then pays at a small cafe.",
+  "body": "Pablo entra en un pequeño café. Mira el menú.\n\n«¡Buenos días! Quisiera un café y un croissant, por favor.»\n\nEl camarero sonríe. «Muy bien. Son tres euros con cincuenta.»\n\nPablo paga y se sienta cerca de la ventana. El café está caliente y el croissant está delicioso.",
+  "glossary": [
+    {
+      "term": "quisiera",
+      "definition": "I would like",
+      "note": "La forma cortés de pedir; más suave que «quiero»."
+    },
+    {
+      "term": "son tres euros con cincuenta",
+      "definition": "that comes to three euros fifty"
+    },
+    {
+      "term": "cerca de la ventana",
+      "definition": "near the window"
+    }
+  ],
+  "exercises": [
+    {
+      "id": "dev-cafe-q1",
+      "type": "multiple_choice",
+      "item_id": "es.comida.pedir",
+      "prompt": "¿Qué pide Pablo?",
+      "choices": [
+        "Un café y un croissant",
+        "Un té y una tarta",
+        "Un jugo y un pan"
+      ],
+      "answer": "Un café y un croissant"
+    },
+    {
+      "id": "dev-cafe-q2",
+      "type": "multiple_choice",
+      "item_id": "es.numeros.precios",
+      "prompt": "¿Cuánto paga Pablo?",
+      "choices": [
+        "Dos euros",
+        "Tres euros con cincuenta",
+        "Diez euros"
+      ],
+      "answer": "Tres euros con cincuenta"
+    },
+    {
+      "id": "dev-cafe-q3",
+      "type": "cloze",
+      "item_id": "es.comida.pedir",
+      "prompt": "«___ un café, por favor.»",
+      "answer": "Quisiera"
+    }
+  ],
+  "audio": null,
+  "source": {
+    "generator": "hand-authored",
+    "reviewed_by": "spanish-cli t5",
+    "generated_at": "2026-07-11"
+  }
+}

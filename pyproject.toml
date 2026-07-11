@@ -29,6 +29,13 @@ build-backend = "hatchling.build"
 [tool.hatch.build.targets.wheel]
 packages = ["spanish"]
 
+# Ship the committed story content inside the wheel so the installed CLI can
+# resolve `content/stories/*.json` without the repo checked out. The loader in
+# spanish/tutor/stories.py falls back to this packaged copy (spanish/_content/
+# stories) when the repo-root content/ dir is absent.
+[tool.hatch.build.targets.wheel.force-include]
+"content" = "spanish/_content"
+
 [dependency-groups]
 dev = [
     "pytest>=8.0",
