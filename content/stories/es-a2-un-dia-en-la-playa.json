@@ -1,0 +1,87 @@
+{
+  "schema_version": "1.0",
+  "kind": "story",
+  "id": "es-a2-un-dia-en-la-playa",
+  "subject": "spanish",
+  "title": "Un día en la playa",
+  "level": "beginner",
+  "level_detail": "A2",
+  "language": "es",
+  "summary": "Camila and her friends spend the first beach day of summer together.",
+  "body": "El sábado pasado, Camila y sus amigos fueron a la playa por primera vez del\nverano. Salieron de casa muy temprano para evitar el calor y el tráfico.\n\nCuando llegaron, el mar estaba tranquilo y el cielo estaba completamente\ndespejado. Pusieron las toallas cerca de las sombrillas y prepararon la\ncomida para el almuerzo.\n\nCamila y su amiga Valeria nadaron un rato en el mar. El agua estaba fría al\nprincipio, pero después de unos minutos ya no lo notaban. Mientras tanto, los\ndemás jugaron vóley playa en la arena.\n\nA la hora del almuerzo, todos se sentaron juntos. Comieron sándwiches, fruta\nfresca y bebieron mucha agua para no deshidratarse con el calor.\n\nPor la tarde, el viento cambió y aparecieron algunas nubes grises. Decidieron\nrecoger sus cosas antes de que empezara a llover.\n\nCuando volvían a casa, cansados pero felices, Camila pensó que había sido un\ndía perfecto. Ya tenía ganas de volver a la playa el próximo fin de semana.",
+  "glossary": [
+    {
+      "term": "evitar",
+      "definition": "to avoid"
+    },
+    {
+      "term": "despejado",
+      "definition": "clear, cloudless (sky)"
+    },
+    {
+      "term": "la sombrilla",
+      "definition": "the beach umbrella"
+    },
+    {
+      "term": "notar",
+      "definition": "to notice"
+    },
+    {
+      "term": "deshidratarse",
+      "definition": "to become dehydrated"
+    },
+    {
+      "term": "recoger",
+      "definition": "to pack up, to gather"
+    },
+    {
+      "term": "tener ganas de",
+      "definition": "to feel like (doing something)"
+    }
+  ],
+  "exercises": [
+    {
+      "id": "es-a2-un-dia-en-la-playa-q1",
+      "type": "multiple_choice",
+      "item_id": "es.story.es-a2-un-dia-en-la-playa.1",
+      "prompt": "¿Por qué salieron temprano de casa?",
+      "choices": [
+        "Para evitar el calor y el tráfico",
+        "Porque el mar cerraba temprano",
+        "Porque iban a llegar tarde al trabajo"
+      ],
+      "answer": "Para evitar el calor y el tráfico"
+    },
+    {
+      "id": "es-a2-un-dia-en-la-playa-q2",
+      "type": "true_false",
+      "item_id": "es.story.es-a2-un-dia-en-la-playa.2",
+      "prompt": "El agua del mar estaba caliente todo el tiempo.",
+      "choices": [
+        "Verdadero",
+        "Falso"
+      ],
+      "answer": "Falso"
+    },
+    {
+      "id": "es-a2-un-dia-en-la-playa-q3",
+      "type": "cloze",
+      "item_id": "es.story.es-a2-un-dia-en-la-playa.3",
+      "prompt": "Decidieron recoger sus cosas antes de que empezara a ___.",
+      "answer": "llover"
+    },
+    {
+      "id": "es-a2-un-dia-en-la-playa-q4",
+      "type": "short_answer",
+      "item_id": "es.story.es-a2-un-dia-en-la-playa.4",
+      "prompt": "¿Qué hicieron los amigos que no nadaron?",
+      "rubric": "Passes if the answer mentions they played beach volleyball on the sand (jugaron vóley playa en la arena)."
+    }
+  ],
+  "audio": null,
+  "source": {
+    "generator": "hand-authored",
+    "reviewed_by": "agent-t7b",
+    "generated_at": "2026-07-11"
+  }
+}

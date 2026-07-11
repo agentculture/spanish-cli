@@ -5,6 +5,15 @@ All notable changes to this project will be documented in this file.
 Format follows [Keep a Changelog](https://keepachangelog.com/). This project
 adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.6.0] - 2026-07-11
+
+### Added
+
+- Learn subject-plugin contract v1.0 ported from french-cli (mechanical port, verified by scripts/port_check.sh): eight tutor verbs with schema-valid --json
+- Tutor engine: 3-module Spanish curriculum (5 lessons, 9 items, 18 exercises), per-learner XDG state
+- Story ladder: 11 graded-reader stories (A1-C1, regional registers flagged) with CI schema validation
+- Cited contract schemas + validator (contract v1.0, provenance in docs/contract-provenance.md)
+
 ## [0.5.0] - 2026-07-10
 
 ### Added

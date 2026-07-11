@@ -1,0 +1,117 @@
+{
+  "schema_version": "1.0",
+  "kind": "story",
+  "id": "es-b2-las-fiestas-de-mi-pueblo",
+  "subject": "spanish",
+  "title": "Las fiestas de mi pueblo",
+  "level": "advanced",
+  "level_detail": "B2 — Mexican Spanish register",
+  "language": "es",
+  "summary": "A narrator recalls the nine nights of posadas in their Oaxacan hometown.",
+  "body": "Cada mes de diciembre, mi pueblo natal en Oaxaca se transforma por completo.\nLas calles se llenan de luces de colores, los puestos de comida aparecen en\ncada esquina y el aroma a pan de fiesta y chocolate caliente se siente desde\ntemprano en la mañana.\n\nLa celebración principal dura nueve días y se conoce como «las posadas».\nCada noche, un grupo de vecinos recorre las calles cantando villancicos y\npidiendo posada de casa en casa, tal como lo hicieron José y María en la\nhistoria bíblica. Al final del recorrido, la familia anfitriona abre sus\npuertas y ofrece ponche caliente, tamales y, por supuesto, la tradicional\npiñata.\n\nRecuerdo que, de niño, esperaba todo el año el momento de romper la piñata.\nNos vendaban los ojos, nos daban un palo de madera y nos hacían girar varias\nveces antes de dejarnos golpear. Cuando finalmente la piñata se rompía,\ntodos corríamos a recoger los dulces y las frutas que caían al suelo.\n\nMi abuela siempre decía que las posadas no eran solo una fiesta religiosa,\nsino también una manera de fortalecer los lazos entre los vecinos. «Aquí\nnadie festeja solo», me repetía cada año mientras preparaba tamales para\ncompartir con toda la cuadra.\n\nEl último día de las fiestas, el 24 de diciembre, toda la familia se reúne\npara la cena de Nochebuena. Comemos bacalao, romeritos y, al dar la\nmedianoche, brindamos con sidra mientras suenan los cohetes en el cielo.\n\nAunque ahora vivo lejos, en otra ciudad, cada diciembre siento la necesidad\nde volver aunque sea por unos días. Mi pueblo tiene algo que no encuentro en\nningún otro lugar: esa sensación de que, durante nueve noches, toda la\ncomunidad late al mismo ritmo.\n\nCuando mis hijos me preguntan por qué viajamos tan lejos cada Navidad, les\ncuento estas historias y espero que, algún día, ellos también sientan ese\nmismo cariño por las tradiciones de su pueblo.",
+  "glossary": [
+    {
+      "term": "natal",
+      "definition": "native (as in pueblo natal, one's hometown)"
+    },
+    {
+      "term": "la posada",
+      "definition": "the traditional pre-Christmas nightly procession",
+      "note": "Mexican regional term; commemorates Joseph and Mary seeking shelter."
+    },
+    {
+      "term": "el villancico",
+      "definition": "the Christmas carol"
+    },
+    {
+      "term": "la piñata",
+      "definition": "the piñata"
+    },
+    {
+      "term": "vendar los ojos",
+      "definition": "to blindfold"
+    },
+    {
+      "term": "fortalecer los lazos",
+      "definition": "to strengthen bonds"
+    },
+    {
+      "term": "la cuadra",
+      "definition": "the (city) block",
+      "note": "Latin-American usage; not used this way in Spain."
+    },
+    {
+      "term": "el bacalao",
+      "definition": "codfish"
+    },
+    {
+      "term": "los romeritos",
+      "definition": "a traditional Mexican herb-and-mole dish",
+      "note": "Regional Mexican Christmas dish."
+    },
+    {
+      "term": "brindar",
+      "definition": "to toast (with a drink)"
+    },
+    {
+      "term": "el cohete",
+      "definition": "the firework, the rocket"
+    },
+    {
+      "term": "latir",
+      "definition": "to beat (as a heart)"
+    }
+  ],
+  "exercises": [
+    {
+      "id": "es-b2-las-fiestas-de-mi-pueblo-q1",
+      "type": "multiple_choice",
+      "item_id": "es.story.es-b2-las-fiestas-de-mi-pueblo.1",
+      "prompt": "¿Cuántos días duran las posadas?",
+      "choices": [
+        "Nueve días",
+        "Siete días",
+        "Un mes"
+      ],
+      "answer": "Nueve días"
+    },
+    {
+      "id": "es-b2-las-fiestas-de-mi-pueblo-q2",
+      "type": "true_false",
+      "item_id": "es.story.es-b2-las-fiestas-de-mi-pueblo.2",
+      "prompt": "La abuela pensaba que las posadas eran solo una fiesta religiosa.",
+      "choices": [
+        "Verdadero",
+        "Falso"
+      ],
+      "answer": "Falso"
+    },
+    {
+      "id": "es-b2-las-fiestas-de-mi-pueblo-q3",
+      "type": "cloze",
+      "item_id": "es.story.es-b2-las-fiestas-de-mi-pueblo.3",
+      "prompt": "Nos vendaban los ojos, nos daban un palo de madera y nos hacían ___ varias veces antes de dejarnos golpear.",
+      "answer": "girar"
+    },
+    {
+      "id": "es-b2-las-fiestas-de-mi-pueblo-q4",
+      "type": "short_answer",
+      "item_id": "es.story.es-b2-las-fiestas-de-mi-pueblo.4",
+      "prompt": "¿Qué comen y beben en la cena de Nochebuena, según el texto?",
+      "rubric": "Passes if the answer names at least two of: bacalao, romeritos, sidra; naming only one is partial."
+    },
+    {
+      "id": "es-b2-las-fiestas-de-mi-pueblo-q5",
+      "type": "discussion",
+      "item_id": "es.story.es-b2-las-fiestas-de-mi-pueblo.5",
+      "prompt": "El texto usa vocabulario y platos regionales de México (las posadas, los romeritos, la cuadra). ¿Qué tradición navideña de tu propia cultura podrías comparar con las posadas?",
+      "rubric": "Open-ended: passes if the learner names a comparable tradition and draws at least one concrete point of comparison, in Spanish."
+    }
+  ],
+  "audio": null,
+  "source": {
+    "generator": "hand-authored",
+    "reviewed_by": "agent-t7b",
+    "generated_at": "2026-07-11"
+  }
+}

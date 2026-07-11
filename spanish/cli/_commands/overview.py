@@ -1,13 +1,16 @@
-"""``spanish overview`` — read-only descriptive snapshot of the agent.
+"""``spanish overview`` — the subject's self-description (contract: subject_overview).
 
-Describes the agent to an agent reader: identity (from culture.yaml), the verb
-surface, and the sibling-pattern artifacts this template carries. The shared
-section/render helpers here are reused by the ``cli`` noun's ``overview`` (see
-:mod:`spanish.cli._commands.cli`).
+Reconciled surface: this verb is both the agent-first descriptive snapshot *and*
+the contract's ``overview`` payload. Because contract payloads are open, the
+JSON output carries the contract-required fields (``schema_version``, ``kind:
+subject_overview``, ``subject``, ``display_name``, ``description``, ``modules``,
+``content``) **and** keeps the ``sections`` key the agent-first rubric checks —
+one payload satisfying both.
 
-Descriptive verbs never hard-fail on a missing target path — an optional
-positional ``target`` is accepted and ignored (overview describes this agent,
-not an external target), so ``overview <bogus-path>`` still exits 0.
+Learner-independent and side-effect free, so the static web face can build one
+sub-page per module straight from it. Descriptive verbs never hard-fail on a
+missing target path: an optional ``target`` positional is accepted and ignored,
+so ``overview <bogus-path>`` still exits 0.
 """
 
 from __future__ import annotations
@@ -16,38 +19,51 @@ import argparse
 
 from spanish.cli._commands.whoami import report
 from spanish.cli._output import emit_result
-
-_ARTIFACTS = [
-    "culture.yaml + AGENTS.colleague.md — mesh identity (suffix + backend)",
-    ".claude/skills/ — the canonical guildmaster skill kit (cite-don't-import)",
-    "docs/skill-sources.md — skill provenance ledger",
-    "pyproject.toml + .github/workflows/ — buildable, deployable package baseline",
-]
+from spanish.tutor import curriculum, engine, stories
 
 _VERBS = [
-    "whoami — identity probe (nick, version, backend, model)",
-    "learn — structured self-teaching prompt",
-    "explain <path> — markdown docs for a topic",
-    "overview — this descriptive snapshot",
-    "doctor — check the agent-identity invariants",
+    "overview — this subject self-description (contract: subject_overview)",
+    "progress — the learner's mastery, counters, and next step",
+    "advice — deterministic study advice from stored state",
+    "story list|read — graded stories + reading directive",
+    "lesson start|next|repeat — teaching directives from the curriculum",
+    "practice [<scope>] — a batch of exercises to run",
+    "record — write back a graded outcome; updates mastery",
+    "doctor — self-check + contract pin",
+    "whoami / learn / explain / cli overview — agent-first introspection",
 ]
+
+
+def _module_items() -> list[str]:
+    return [f"{m.id} — {m.title} ({m.level})" for m in curriculum.MODULES]
 
 
 def agent_sections() -> list[dict[str, object]]:
-    """Sections describing the agent (used by the global verb)."""
+    """Sections describing the subject + agent (rubric `sections` + text render)."""
     ident = report()
+    counts = curriculum.counts()
     return [
         {
             "title": "Identity",
             "items": [
+                f"subject: {engine.subject.SUBJECT_ID}",
                 f"nick: {ident['nick']}",
                 f"version: {ident['version']}",
                 f"backend: {ident['backend']}",
                 f"model: {ident['model']}",
             ],
         },
+        {"title": "Modules", "items": _module_items()},
+        {
+            "title": "Content",
+            "items": [
+                f"stories: {stories.story_count()}",
+                f"lessons: {counts['lessons']}",
+                f"items: {counts['items']}",
+                f"exercises: {counts['exercises']}",
+            ],
+        },
         {"title": "Verbs", "items": list(_VERBS)},
-        {"title": "Sibling-pattern artifacts", "items": list(_ARTIFACTS)},
     ]
 
 
@@ -88,24 +104,29 @@ def emit_overview(subject: str, sections: list[dict[str, object]], *, json_mode:
 
 def cmd_overview(args: argparse.Namespace) -> int:
     # `target` is accepted for rubric compatibility (descriptive verbs must not
-    # hard-fail on a missing path) but overview describes this agent itself.
-    emit_overview(
-        "spanish",
-        agent_sections(),
-        json_mode=bool(getattr(args, "json", False)),
-    )
+    # hard-fail on a missing path) but overview describes this subject itself.
+    json_mode = bool(getattr(args, "json", False))
+    if json_mode:
+        # Contract subject_overview payload, extended (open payload) with the
+        # `sections` key the agent-first rubric asserts — one payload, both
+        # contracts satisfied.
+        payload = engine.overview_payload()
+        payload["sections"] = agent_sections()
+        emit_result(payload, json_mode=True)
+    else:
+        emit_result(render_text("spanish-cli", agent_sections()), json_mode=False)
     return 0
 
 
 def register(sub: argparse._SubParsersAction) -> None:
     p = sub.add_parser(
         "overview",
-        help="Read-only descriptive snapshot of the agent (identity, verbs, artifacts).",
+        help="Subject self-description: modules, content counts, verbs (subject_overview).",
     )
     p.add_argument(
         "target",
         nargs="?",
-        help="Ignored — overview always describes this agent itself. Accepted so a "
+        help="Ignored — overview always describes this subject itself. Accepted so a "
         "stray path argument never hard-fails.",
     )
     p.add_argument("--json", action="store_true", help="Emit structured JSON.")

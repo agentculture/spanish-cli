@@ -1,0 +1,88 @@
+{
+  "schema_version": "1.0",
+  "kind": "story",
+  "id": "es-a1-el-mercado-de-frutas",
+  "subject": "spanish",
+  "title": "El mercado de frutas",
+  "level": "beginner",
+  "level_detail": "A1",
+  "language": "es",
+  "summary": "Ana and her mother go to the Saturday market and buy fruit.",
+  "body": "Los sábados, Ana va al mercado central con su madre. El mercado está cerca de\nsu casa y siempre hay mucha gente.\n\nEn el mercado hay frutas de muchos colores: manzanas rojas, plátanos amarillos\ny uvas verdes. Ana camina entre los puestos y mira todo con curiosidad.\n\n—Buenos días —dice el vendedor—. ¿Qué necesita hoy?\n\n—Buenos días —responde la madre de Ana—. Necesito un kilo de manzanas y medio\nkilo de fresas, por favor.\n\nEl vendedor pone las frutas en una bolsa. Ana elige tres plátanos para ella. Le\ngustan mucho los plátanos porque son dulces y fáciles de comer.\n\n—¿Algo más? —pregunta el vendedor.\n\n—No, gracias. Eso es todo —dice la madre.\n\nPagan y caminan a casa. Ana lleva la bolsa de plátanos con mucho cuidado. En\ncasa, ponen las frutas en la mesa de la cocina. Ana come un plátano antes de\nalmorzar.\n\nLos sábados en el mercado son el momento favorito de la semana para Ana.",
+  "glossary": [
+    {
+      "term": "el mercado",
+      "definition": "the market"
+    },
+    {
+      "term": "el puesto",
+      "definition": "the market stall"
+    },
+    {
+      "term": "la fresa",
+      "definition": "the strawberry"
+    },
+    {
+      "term": "dulce",
+      "definition": "sweet"
+    },
+    {
+      "term": "elegir",
+      "definition": "to choose",
+      "note": "Irregular e→i verb: yo elijo, tú eliges."
+    },
+    {
+      "term": "¿Algo más?",
+      "definition": "Anything else? (a shopkeeper's stock phrase)"
+    },
+    {
+      "term": "con cuidado",
+      "definition": "carefully"
+    }
+  ],
+  "exercises": [
+    {
+      "id": "es-a1-el-mercado-de-frutas-q1",
+      "type": "multiple_choice",
+      "item_id": "es.story.es-a1-el-mercado-de-frutas.1",
+      "prompt": "¿Qué compra la madre de Ana en el mercado?",
+      "choices": [
+        "Un kilo de manzanas y medio kilo de fresas",
+        "Dos kilos de plátanos",
+        "Un kilo de uvas verdes"
+      ],
+      "answer": "Un kilo de manzanas y medio kilo de fresas"
+    },
+    {
+      "id": "es-a1-el-mercado-de-frutas-q2",
+      "type": "true_false",
+      "item_id": "es.story.es-a1-el-mercado-de-frutas.2",
+      "prompt": "Ana elige tres plátanos para ella.",
+      "choices": [
+        "Verdadero",
+        "Falso"
+      ],
+      "answer": "Verdadero"
+    },
+    {
+      "id": "es-a1-el-mercado-de-frutas-q3",
+      "type": "cloze",
+      "item_id": "es.story.es-a1-el-mercado-de-frutas.3",
+      "prompt": "Ana come un plátano antes de ___.",
+      "answer": "almorzar"
+    },
+    {
+      "id": "es-a1-el-mercado-de-frutas-q4",
+      "type": "short_answer",
+      "item_id": "es.story.es-a1-el-mercado-de-frutas.4",
+      "prompt": "¿Por qué le gustan los plátanos a Ana?",
+      "rubric": "Passes if the answer mentions that they are sweet and easy to eat (son dulces y fáciles de comer); naming only one of the two reasons is partial."
+    }
+  ],
+  "audio": null,
+  "source": {
+    "generator": "hand-authored",
+    "reviewed_by": "agent-t7b",
+    "generated_at": "2026-07-11"
+  }
+}

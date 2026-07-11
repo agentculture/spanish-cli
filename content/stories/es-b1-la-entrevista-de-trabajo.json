@@ -1,0 +1,102 @@
+{
+  "schema_version": "1.0",
+  "kind": "story",
+  "id": "es-b1-la-entrevista-de-trabajo",
+  "subject": "spanish",
+  "title": "La entrevista de trabajo",
+  "level": "intermediate",
+  "level_detail": "B1",
+  "language": "es",
+  "summary": "Valentina prepares for and lands the most important job interview of her life.",
+  "body": "Valentina llevaba dos semanas preparándose para la entrevista de trabajo más\nimportante de su vida. Había investigado la empresa, había practicado sus\nrespuestas y había elegido con cuidado la ropa que iba a llevar.\n\nLa mañana de la entrevista, llegó a la oficina con quince minutos de\nanticipación. Se sentó en la sala de espera, con las manos un poco\nsudorosas, y repasó mentalmente sus argumentos una última vez.\n\nCuando la recepcionista la llamó, Valentina respiró profundamente y entró a\nla sala de reuniones. Allí la esperaban dos personas: el gerente de recursos\nhumanos y la directora del departamento de marketing.\n\n—Cuéntenos sobre un proyecto del que se sienta orgullosa —le pidió el\ngerente.\n\nValentina habló sobre una campaña publicitaria que había liderado en su\ntrabajo anterior. Explicó los problemas que había enfrentado y cómo su\nequipo había logrado superarlos.\n\nLa directora hizo varias preguntas sobre cómo Valentina manejaba el estrés y\nlos plazos ajustados. Valentina respondió con ejemplos concretos, sin dudar\ndemasiado.\n\nAl final de la entrevista, el gerente le agradeció su tiempo y le explicó\nque se comunicarían con ella en una semana.\n\nValentina salió del edificio con una mezcla de alivio y ansiedad. No sabía\nsi había respondido bien a todas las preguntas, pero sentía que había hecho\nsu mejor esfuerzo.\n\nEsa noche, mientras cenaba con su familia, les contó cada detalle de la\nentrevista. Su madre la abrazó y le dijo que, sin importar el resultado,\nestaba muy orgullosa de ella.\n\nUna semana después, Valentina recibió una llamada: había conseguido el\ntrabajo.",
+  "glossary": [
+    {
+      "term": "la anticipación",
+      "definition": "in advance, ahead of time"
+    },
+    {
+      "term": "sudoroso(a)",
+      "definition": "sweaty"
+    },
+    {
+      "term": "el/la gerente",
+      "definition": "the manager"
+    },
+    {
+      "term": "orgulloso(a)",
+      "definition": "proud"
+    },
+    {
+      "term": "liderar",
+      "definition": "to lead"
+    },
+    {
+      "term": "el plazo ajustado",
+      "definition": "the tight deadline"
+    },
+    {
+      "term": "dudar",
+      "definition": "to hesitate, to doubt"
+    },
+    {
+      "term": "el alivio",
+      "definition": "relief"
+    },
+    {
+      "term": "la ansiedad",
+      "definition": "anxiety"
+    }
+  ],
+  "exercises": [
+    {
+      "id": "es-b1-la-entrevista-de-trabajo-q1",
+      "type": "multiple_choice",
+      "item_id": "es.story.es-b1-la-entrevista-de-trabajo.1",
+      "prompt": "¿Sobre qué le pidió el gerente que hablara Valentina?",
+      "choices": [
+        "Sobre un proyecto del que se sienta orgullosa",
+        "Sobre su sueldo anterior",
+        "Sobre sus estudios universitarios"
+      ],
+      "answer": "Sobre un proyecto del que se sienta orgullosa"
+    },
+    {
+      "id": "es-b1-la-entrevista-de-trabajo-q2",
+      "type": "true_false",
+      "item_id": "es.story.es-b1-la-entrevista-de-trabajo.2",
+      "prompt": "Valentina se enteró del resultado el mismo día de la entrevista.",
+      "choices": [
+        "Verdadero",
+        "Falso"
+      ],
+      "answer": "Falso"
+    },
+    {
+      "id": "es-b1-la-entrevista-de-trabajo-q3",
+      "type": "cloze",
+      "item_id": "es.story.es-b1-la-entrevista-de-trabajo.3",
+      "prompt": "Valentina salió del edificio con una mezcla de alivio y ___.",
+      "answer": "ansiedad"
+    },
+    {
+      "id": "es-b1-la-entrevista-de-trabajo-q4",
+      "type": "short_answer",
+      "item_id": "es.story.es-b1-la-entrevista-de-trabajo.4",
+      "prompt": "¿Qué le preguntó la directora de marketing?",
+      "rubric": "Passes if the answer mentions questions about handling stress and tight deadlines (el estrés y los plazos ajustados)."
+    },
+    {
+      "id": "es-b1-la-entrevista-de-trabajo-q5",
+      "type": "discussion",
+      "item_id": "es.story.es-b1-la-entrevista-de-trabajo.5",
+      "prompt": "¿Qué habrías respondido tú si te hubieran hecho la misma pregunta sobre un proyecto del que te sientas orgulloso/a?",
+      "rubric": "Open-ended: passes if the learner describes a concrete project and connects it to a skill, in Spanish, using at least one past tense correctly."
+    }
+  ],
+  "audio": null,
+  "source": {
+    "generator": "hand-authored",
+    "reviewed_by": "agent-t7b",
+    "generated_at": "2026-07-11"
+  }
+}

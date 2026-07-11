@@ -1,0 +1,95 @@
+{
+  "schema_version": "1.0",
+  "kind": "story",
+  "id": "es-b1-el-barrio-nuevo",
+  "subject": "spanish",
+  "title": "El barrio nuevo",
+  "level": "intermediate",
+  "level_detail": "B1",
+  "language": "es",
+  "summary": "Diego moves to a new neighborhood and slowly learns to feel at home.",
+  "body": "Cuando Diego tenía doce años, su familia se mudó a un barrio nuevo al otro\nlado de la ciudad. Al principio, no le gustaba nada la idea de dejar a sus\namigos y su antigua escuela.\n\nEl primer día en la casa nueva, Diego se sentía triste y no quería salir de\nsu habitación. Todo era desconocido: las calles, los sonidos, incluso el\nolor del aire era diferente.\n\nSin embargo, al día siguiente, mientras ordenaba sus libros, escuchó una voz\ndesde el jardín de al lado.\n\n—¡Hola! Me llamo Rodrigo. Vivo aquí desde que nací. ¿Quieres jugar fútbol\ncon nosotros esta tarde?\n\nDiego dudó un momento, pero decidió aceptar la invitación. Esa tarde conoció\na varios chicos del barrio y descubrió que, aunque el lugar era nuevo, las\npersonas eran muy amables.\n\nCon el paso de las semanas, Diego empezó a explorar el barrio. Encontró una\npanadería con un pan delicioso, un parque con una cancha de básquetbol y una\nbiblioteca pequeña donde podía estudiar en silencio.\n\nPoco a poco, hizo nuevos amigos en su nueva escuela también. Aunque todavía\nextrañaba a sus amigos anteriores, hablaba con ellos por videollamada casi\ntodos los fines de semana.\n\nUn año después, cuando alguien le preguntaba dónde vivía, Diego respondía\ncon orgullo el nombre de su nuevo barrio. Ya no se sentía como un extraño;\nse sentía como en casa.\n\nDiego aprendió que, aunque los cambios pueden dar miedo al principio, muchas\nveces traen cosas buenas que uno no esperaba.",
+  "glossary": [
+    {
+      "term": "mudarse",
+      "definition": "to move house"
+    },
+    {
+      "term": "desconocido(a)",
+      "definition": "unknown"
+    },
+    {
+      "term": "dudar",
+      "definition": "to hesitate"
+    },
+    {
+      "term": "la cancha",
+      "definition": "the (sports) court / field"
+    },
+    {
+      "term": "la biblioteca",
+      "definition": "the library"
+    },
+    {
+      "term": "el/la extraño(a)",
+      "definition": "a stranger"
+    },
+    {
+      "term": "dar miedo",
+      "definition": "to be scary"
+    },
+    {
+      "term": "esperar",
+      "definition": "to expect, to wait for"
+    },
+    {
+      "term": "con orgullo",
+      "definition": "proudly"
+    }
+  ],
+  "exercises": [
+    {
+      "id": "es-b1-el-barrio-nuevo-q1",
+      "type": "multiple_choice",
+      "item_id": "es.story.es-b1-el-barrio-nuevo.1",
+      "prompt": "¿Quién invitó a Diego a jugar fútbol?",
+      "choices": [
+        "Rodrigo, el vecino",
+        "Su hermano mayor",
+        "Un compañero de la escuela antigua"
+      ],
+      "answer": "Rodrigo, el vecino"
+    },
+    {
+      "id": "es-b1-el-barrio-nuevo-q2",
+      "type": "true_false",
+      "item_id": "es.story.es-b1-el-barrio-nuevo.2",
+      "prompt": "Diego dejó de hablar con sus amigos antiguos por completo.",
+      "choices": [
+        "Verdadero",
+        "Falso"
+      ],
+      "answer": "Falso"
+    },
+    {
+      "id": "es-b1-el-barrio-nuevo-q3",
+      "type": "cloze",
+      "item_id": "es.story.es-b1-el-barrio-nuevo.3",
+      "prompt": "Diego aprendió que, aunque los cambios pueden dar ___ al principio, muchas veces traen cosas buenas.",
+      "answer": "miedo"
+    },
+    {
+      "id": "es-b1-el-barrio-nuevo-q4",
+      "type": "short_answer",
+      "item_id": "es.story.es-b1-el-barrio-nuevo.4",
+      "prompt": "¿Qué tres lugares descubrió Diego en el barrio nuevo?",
+      "rubric": "Passes if the answer names the bakery, the basketball court, and the library (la panadería, la cancha de básquetbol, la biblioteca); two of three is partial."
+    }
+  ],
+  "audio": null,
+  "source": {
+    "generator": "hand-authored",
+    "reviewed_by": "agent-t7b",
+    "generated_at": "2026-07-11"
+  }
+}

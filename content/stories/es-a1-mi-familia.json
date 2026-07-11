@@ -1,0 +1,83 @@
+{
+  "schema_version": "1.0",
+  "kind": "story",
+  "id": "es-a1-mi-familia",
+  "subject": "spanish",
+  "title": "Mi familia",
+  "level": "beginner",
+  "level_detail": "A1",
+  "language": "es",
+  "summary": "Sofía introduces her parents, siblings, dog, and Sunday family lunches.",
+  "body": "Me llamo Sofía y tengo diez años. Vivo con mi familia en una casa pequeña pero\nmuy bonita.\n\nMi papá se llama Andrés. Es alto y trabaja en un hospital. Mi mamá se llama\nCarolina. Es profesora de matemáticas y es muy paciente.\n\nTengo un hermano mayor. Se llama Diego y tiene quince años. Diego juega fútbol\ntodos los fines de semana. También tengo una hermana menor. Se llama\nValentina y tiene solo cinco años. Valentina es muy curiosa y hace muchas\npreguntas.\n\nEn casa también vivimos con Rex, nuestro perro. Rex es negro y blanco, y le\nencanta correr en el jardín.\n\nLos domingos, toda la familia almuerza junta. Mi abuela Rosa viene a comer con\nnosotros. Ella cocina un pastel de chocolate delicioso para el postre.\n\nDespués de almorzar, jugamos juegos de mesa en la sala. A mi hermana\nValentina le encanta ganar, y siempre sonríe cuando gana una partida.\n\nMi familia es pequeña, pero estamos muy unidos. Me gusta mucho pasar tiempo\ncon ellos.",
+  "glossary": [
+    {
+      "term": "mayor",
+      "definition": "older (sibling)"
+    },
+    {
+      "term": "menor",
+      "definition": "younger (sibling)"
+    },
+    {
+      "term": "el jardín",
+      "definition": "the garden / yard"
+    },
+    {
+      "term": "unidos",
+      "definition": "close-knit, united"
+    },
+    {
+      "term": "el postre",
+      "definition": "dessert"
+    },
+    {
+      "term": "paciente",
+      "definition": "patient"
+    }
+  ],
+  "exercises": [
+    {
+      "id": "es-a1-mi-familia-q1",
+      "type": "multiple_choice",
+      "item_id": "es.story.es-a1-mi-familia.1",
+      "prompt": "¿Cuántos años tiene Diego, el hermano de Sofía?",
+      "choices": [
+        "Cinco años",
+        "Diez años",
+        "Quince años"
+      ],
+      "answer": "Quince años"
+    },
+    {
+      "id": "es-a1-mi-familia-q2",
+      "type": "true_false",
+      "item_id": "es.story.es-a1-mi-familia.2",
+      "prompt": "La abuela Rosa vive en la misma casa que Sofía.",
+      "choices": [
+        "Verdadero",
+        "Falso"
+      ],
+      "answer": "Falso"
+    },
+    {
+      "id": "es-a1-mi-familia-q3",
+      "type": "cloze",
+      "item_id": "es.story.es-a1-mi-familia.3",
+      "prompt": "Mi mamá es profesora de ___.",
+      "answer": "matemáticas"
+    },
+    {
+      "id": "es-a1-mi-familia-q4",
+      "type": "short_answer",
+      "item_id": "es.story.es-a1-mi-familia.4",
+      "prompt": "Describe a Rex, el perro de la familia.",
+      "rubric": "Passes if the answer mentions his colors (negro y blanco) and that he likes to run in the garden; naming only the colors is partial."
+    }
+  ],
+  "audio": null,
+  "source": {
+    "generator": "hand-authored",
+    "reviewed_by": "agent-t7b",
+    "generated_at": "2026-07-11"
+  }
+}
